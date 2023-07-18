@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Orsi S.L.R website</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link rel="icon" type="image/x-icon" href="images/logo orsi.ico">
+      
+        <!-- Importa Bootstrap CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" integrity="sha512-usVBAd66/NpVNfBge19gws2j6JZinnca12rAe2l+d+QkLU9fiG02O1X8Q6hepIpr/EYKZvKx/I9WsnujJuOmBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+        <!-- Importa jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-6/Jqx8jNlY5cXcL3d9yZfLr8+wPFJmMiqv6dK+3t/c5GcGp2G4fF7t1bJ5xzdm2eGJyMEbHMAf5YzBfZ5rXb2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      
+        <!-- Importa Popper.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js" integrity="sha512-6zG8i4fMeeQDf9K1KULR9f2K0mN6ZnY7oU8RiW0Ks5v6GwZQJDP2nK9c4xN/x3qJYjKkM6J6vDqyW5Gz5z6pWQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      
+        <!-- Importa Bootstrap JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
+      </head>
+   </head>
+   <body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand ml-0 custom-navbar-brand" href="#">
+            <img src="images/LOGO ORSI.png" alt="logo orsi" class="logo-img">
+            <img src="images/nome orsi.png" alt="logo orsi" class="logo-img">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto nav-items">
+              <li class="nav-item">
+                <a data-translation="innovazione" class="nav-link" href="main.html">Innovazioni</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a data-translation="bucatoProfessionale" class="nav-link dropdown-toggle" href="#" id="navbarDropdownInnovazioni"
+                  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Bucato Professionale
+                </a>
+                <div class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownInnovazioni">
+                  <a class="dropdown-item" href="prodottiBit.html">BIT</a>
+                  <a class="dropdown-item" href="prodottiDolomitenWeiss.html">Dolomiten Weiss</a>
+                  <a class="dropdown-item" href="prodottiDolomitenWeissBiologico.html">Dolomiten Weiss Biologico</a>
+                  <a class="dropdown-item" href="prodottiTresil.html">Tresil</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a data-translation="bucatoDomestico" class="nav-link dropdown-toggle" href="#" id="navbarDropdownBucatoDomestico"
+                  role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Bucato Domestico
+                </a>
+                <div class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownBucatoDomestico">
+                  <a class="dropdown-item" href="prodottiSuora.html">La Suora</a>
+                  <a class="dropdown-item" href="prodottiOrsetto.html">Orsetto</a>
+                  <a class="dropdown-item" href="prodottiOrsettoBiologico.html">Orsetto Biologico</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a data-translation="contatti" class="nav-link" href="contatti.html">Contatti</a>
+              </li>
+              <li class="nav-item">
+                <a data-translation="schedaTecnica" class="nav-link" href="ricercaSchedaTecnica.html">Ottieni scheda Tecnica/sicurezza</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="setLanguage('it')">
+                    <img src="loghi/italy.ico" alt="Icona Bandiera" class="icona-bandiera">
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="setLanguage('en')">
+                  <img src="loghi/United-Kingdom-flag-icon.png" alt="Icona Bandiera" class="icona-bandiera">
+                </a>
+              </li>
+              
+              
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      
+      
+     
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+  <script src="translation.js"></script>
+
+<script>
+const savedLanguage = localStorage.getItem('language'); 
+
+if (savedLanguage) {
+  setLanguage(savedLanguage);
+}
+
+window.addEventListener('load', function() {
+  setLanguage(localStorage.getItem('language')); 
+});
+
+</script>
+
+
+  
+
+
+    
+<!-- FINE NAVBAR -->
+
+
+
+
+
+
+
+
+
+<!-- ricerca e sviluppo -->
+<div class="home">
+  <div class="main-home">
+      <div>
+          <div class="home-text-content">
+              <h1 data-translation="titoloRicercaSviluppo">Ricerca e Sviluppo</h1>
+              <p data-translation="descrizioneRicercaSviluppo"class="black-text"> Il nostro team dedicato di esperti in Ricerca e Sviluppo lavora instancabilmente per esplorare nuovi orizzonti, sperimentare nuove tecnologie e sviluppare prodotti all'avanguardia. Mettiamo l'accento sull'interdisciplinarietà, collaborando con partner esterni e università per garantire che le nostre soluzioni siano allineate alle più recenti scoperte scientifiche e tecnologiche</p>
+          </div>
+      </div>
+      <div>
+          <div class="home-image">
+              <img src="images/ReD.png" alt="">
+          </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- about -->
+<div id="about" class="about">
+    <div class="main-about">
+        <div class="about-content">
+            <div class="about-inner-content home-image">
+                <img class="myimageabout"src="images/customer service.png" alt="">
+            </div>
+        </div>
+
+        <div class="about-content">
+            <div class="about-inner-content">
+                <div class="about-text-content">
+                    <h1 data-translation="titoloAssistenza">Assistenza Al Cliente</h1>
+                    <p data-translation="descrizioneAssistenza"> ORSI Group assiste il cliente nell’intero processo di
+                        fabbricazione del prodotto per soddisfarne ogni
+                        esigenza garantendo competitività, controllo costante
+                        della produzione e gli alti standard qualitativi, nel
+                        rispetto delle norme Nazionali ed Internazionali.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--  quality -->
+<div class="quality">
+    <div class="main-quality">
+        <div class="main-inner-quality">
+            <div class="quality-content">
+                <h1 data-translation="titoloTecnologiaDesign">Tecnologia e Design</h1>
+                <p data-translation="descrizioneTecnologiaDesign">Apparecchiature, linee di confezionamento di ultima
+                    generazione e personale altamente qualificato
+                    garantiscono prodotti di eccellenza.
+                    Design e qualità sono i simboli del nostro
+                    Made in Italy.</p>
+
+            </div>
+        </div>
+
+        <div class="main-inner-quality">
+            <div class="quality-content qulity-image">
+                <img src="images/egg.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="enjoy-our-food">
+
+    <div class="food-main-content">
+        <h1 data-translation="titoloProduzione">PRODUZIONE</h1>
+        <p data-translation="descrizioneProduzione"> Lo stabilimento produttivo in Italia ha la capacità di
+            4 ton/ora con linee di confezionamento e pallettizzazione
+            automatiche e robotizzate.
+            Ogni fase della lavorazione è seguita attraverso
+            sistematiche analisi chimiche finalizzate ad un continuo
+            controllo delle performance produttive e allo sviluppo dei
+            processi produttivi. </p>
+    </div>
+
+</div>
+
+<div id="about" class="about">
+        <div class="about-content">
+            <div class="about-inner-content">
+                <div class="about-text-content">
+                    <h1 data-translation="titoloCertificazioni">Le Nostre Certificazioni</h1>
+                    <div>
+                      <h2 data-translation="titoloBiologico" class="black-heading">Certificato detersivo biologico</h2>
+                      <p data-translation="descrizioneBiologico1">Il nostro detersivo biologico è certificato da un'autorità riconosciuta nel settore dell'ecologia e dell'ambiente. Questa certificazione attesta che il nostro prodotto rispetta rigorosi standard di produzione ecologica, utilizzando ingredienti naturali e sostenibili.</p>
+                      <p data-translation="descrizioneBiologico2">Il certificato detersivo biologico garantisce che il nostro prodotto non contenga sostanze chimiche nocive per l'ambiente e per la salute umana. Inoltre, è prodotto con metodi che minimizzano l'impatto ambientale durante tutto il ciclo di vita, dalla produzione all'uso e allo smaltimento.</p>
+                    
+                      <h2 data-translation="titoloVeritas" class="black-heading">Certificato Bureau Veritas</h2>
+                      <p data-translation="descrizioneVeritas1">Il nostro prodotto è stato sottoposto a una valutazione approfondita e ha ottenuto il certificato rilasciato da Bureau Veritas, un'organizzazione leader nel settore delle certificazioni.</p>
+                      <p data-translation="descrizioneVeritas2">Bureau Veritas è riconosciuta a livello internazionale per la sua competenza e indipendenza nelle valutazioni di conformità. Il certificato Bureau Veritas attesta che il nostro prodotto soddisfa rigorosi standard di qualità, sicurezza e sostenibilità.</p>
+                      <p data-translation="descrizioneVeritas3">La certificazione Bureau Veritas è un segno di fiducia per i consumatori, poiché conferma che il nostro prodotto è stato sottoposto a controlli e test accurati per garantire la sua qualità e conformità alle normative vigenti.</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="main-about">
+            <div class="about-content">
+                <div class="about-inner-content">
+                    <img class="myimageabout" src="images/certificato biologico.png" alt="">
+                </div>
+            </div>
+    
+            <div class="about-content">
+                <div class="about-inner-content">
+                    <img class="myimageabout" src="images/bureau veritas.png" alt="">
+                </div>
+            </div>
+    </div>
+</div>
+
+
+<!-- I NOSTRI BRAND -->
+<div id="services" class="services">
+  <div class="services-header">
+      <h2 data-translation="titoloBrands">I Nostri brand</h2>
+      <p data-translation="descrizioneBrands">Descrizione principale dei nostri servizi</p>
+  </div>
+
+  <div class="main-services">
+      <div class="services-content">
+          <div class="services-inner-content">
+              <div class="qulity-image">
+                  <img class="myimageservices" src="images/brand1.png" alt="">
+              </div>
+              <h3></h3>
+              <p></p>
+          </div>
+      </div>
+      <div class="services-content">
+          <div class="services-inner-content">
+              <div class="qulity-image">
+                  <img class="myimageservices" src="images/brand2.png" alt="">
+              </div>
+              <h3></h3>
+              <p></p>
+          </div>
+      </div>
+      <div class="services-content">
+          <div class="services-inner-content">
+              <div class="qulity-image">
+                  <img class="myimageservices" src="images/brand3.png" alt="">
+              </div>
+              <h3></h3>
+              <p></p>
+          </div>
+      </div>
+      <div class="services-content">
+          <div class="services-inner-content">
+              <div class="qulity-image">
+                  <img class="myimageservices" src="images/brand4.png" alt="">
+              </div>
+              <h3></h3>
+              <p></p>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<!-- cosmetologia -->
+<div id="about" class="about">
+  <div class="main-about">
+      <div class="about-content">
+          <div class="about-inner-content home-image">
+              <img class="myimageabout"src="images/idea.png" alt="">
+          </div>
+      </div>
+
+      <div class="about-content">
+          <div class="about-inner-content">
+              <div class="about-text-content">
+                  <h1 data-translation="titoloNovita">Novità</h1>
+                  <p data-translation="descrizioneNovita1">Siamo lieti di annunciare l'avvio delle operazioni della divisione cosmetica di Orsi Group. Situata nelle vicinanze della nostra sede attuale, questa nuova divisione rappresenta un'importante espansione per l'azienda.</p>
+
+<p data-translation="descrizioneNovita2">La divisione cosmetica dispone di un'area dedicata di 6.000 m2, di cui 1.500 m2 coperti. Qui è stato creato un sito produttivo completamente attrezzato per la produzione di cosmetici, che include un laboratorio di analisi, ricerca e sviluppo.</p>
+
+<p data-translation="descrizioneNovita3">La gestione di questa divisione è affidata a un team competente di tecnici e ricercatori cosmetologi, pronti a fare il loro debutto nel settore. Siamo entusiasti di unire le nostre competenze e la nostra passione per la cosmesi per offrire prodotti di alta qualità e soluzioni innovative ai nostri clienti.</p>
+
+<p data-translation="descrizioneNovita4">Questo nuovo sviluppo rappresenta un importante passo avanti per Orsi Group nel settore cosmetico, e siamo pronti ad affrontare questa nuova sfida con impegno e determinazione. Continueremo a lavorare duramente per offrire prodotti di eccellenza e per soddisfare le esigenze sempre crescenti dei nostri clienti.</p>
+
+
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div  style="height: 45;"class="quality">
+    <div class="main-quality">
+        <div class="main-inner-quality">
+            <div class="quality-content">
+                <h1 data-translation="titiloIdrocristalli">IDROCRISTALLI </h1>
+                <p data-translation="descrizioneIdrocristalli">100% OLII ESSENZIALI NATURALI E BIOLOGICI</p>
+
+            </div>
+        </div>
+
+        <div class="main-inner-quality">
+            <div class="quality-content qulity-image">
+                <img src="images/cristalli.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-slide">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner text-center">
+        <div class="carousel-item active">
+          <img src="images/slide3.png" alt="Slide 1" class="d-block w-100 carousel-img">
+        </div>
+        <div class="carousel-item">
+          <img src="images/slide2.png" alt="Slide 2" class="d-block w-100 carousel-img">
+        </div>
+        <div class="carousel-item">
+          <img src="images/slide1.png" alt="Slide 3" class="d-block w-100 carousel-img">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+</div>
+
+
+
+<div class="our-menu-food">
+    <h1 data-translation="titoloSostenibile1">Il Nostro Viaggio Nel Business Sostenibile</h1>
+
+    <div class="main-menu-food">
+        <div class="inner-menu-food">
+            <div class="menu-food-content">
+                <img src="images/mwnu1.png" alt="">
+
+                <div class="menu-food-text">
+                    <h2 data-translation="titoloSostenibile2">Innovazione Responsabile </h2>
+                    <p data-translation="descrizioneSostenibile1"> L'innovazione responsabile è la chiave per un progresso sostenibile e duraturo</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="inner-menu-food">
+            <div class="menu-food-content">
+                <img src="images/menu2.png" alt="">
+
+                <div class="menu-food-text">
+                    <h2 data-translation="titoloSostenibile3">Approvigionamento Etico </h2>
+                    <p data-translation="descrizioneSostenibile2"> Scegliere un approvvigionamento etico è una scelta responsabile per un futuro sostenibile.</p>                </div>
+            </div>
+        </div>
+
+        <div class="inner-menu-food">
+            <div class="menu-food-content">
+                <img src="images/menu3.png" alt="">
+
+                <div class="menu-food-text">
+                    <h2 data-translation="titoloSostenibile4">Proteggere il nostro ambiente </h2>
+                    <p data-translation="descrizioneSostenibile3">Proteggere l'ambiente è proteggere il nostro futuro</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="our-clients", class="our-menu-food">
+    <h1 style="font-size: 3.5em;" data-translation="titoloParnership">I NOSTRI PARTNERSHIP</h1>
+    <ul>
+        <li> <img src="loghi/logo1.jpeg" alt=""> <img src="loghi/logo1.jpeg" alt=""> </li>
+        <li> <img src="loghi/logo2.jpg" alt=""> <img src="loghi/logo2.jpg" alt=""> </li>
+        <li> <img src="loghi/logo3.jpg" alt=""> <img src="loghi/logo3.jpg" alt=""> </li>
+        <li> <img src="loghi/logo4.png" alt=""> <img src="loghi/logo4.png" alt=""> </li>
+        <li> <img src="loghi/logo5.png" alt=""> <img src="loghi/logo5.png" alt=""> </li>
+        <li> <img src="loghi/logo6.jpeg" alt=""> <img src="loghi/logo6.jpeg" alt=""> </li>
+        <li> <img src="loghi/logo7.jpeg" alt=""> <img src="loghi/logo7.jpeg" alt=""> </li>
+        <li> <img src="loghi/logo8.png" alt=""> <img src="loghi/logo8.png" alt=""> </li>
+        <li> <img src="loghi/logo9.jpeg" alt=""> <img src="loghi/logo9.jpeg" alt=""> </li>
+        <li> <img src="loghi/logo10.png" alt=""> <img src="loghi/logo10.png" alt=""> </li>
+        <li> <img src="loghi/logo11.jpeg" alt=""> <img src="loghi/logo11.jpeg" alt=""> </li>
+        <li> <img src="loghi/logo12.jpeg" alt=""> <img src="loghi/logo12.jpeg" alt=""> </li>
+        <li> <img src="loghi/logo13.jpg" alt=""> <img src="loghi/logo13.jpg" alt=""> </li>
+        <li> <img src="loghi/logo14.jpg" alt=""> <img src="loghi/logo14.jpg" alt=""> </li>
+        <li> <img src="loghi/logo15.png" alt=""> <img src="loghi/logo15.png" alt=""> </li>
+        <li> <img src="loghi/logo16.png" alt=""> <img src="loghi/logo16.png" alt=""> </li>
+        <li> <img src="loghi/logo17.jpg" alt=""> <img src="loghi/logo17.jpg" alt=""> </li>
+        <li> <img src="loghi/logo18.jpeg" alt=""> <img src="loghi/logo18.jpeg" alt=""> </li>
+    </ul>
+</div>
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4><i class="fas fa-phone"></i> Telefono</h4>
+                <ul>
+                    <li><a href="#">+39 051 6671000</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4><i class="far fa-envelope"></i> Email</h4>
+                <ul>
+                    <li><a href="#">info@orsidetersivi.com</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4><i class="far fa-envelope"></i> PEC</h4>
+                <ul>
+                    <li><a href="#">orsidetersivi@pec.it</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4><i class="fas fa-id-card"></i> C.F.</h4>
+                <ul>
+                    <li><a href="#">Registro Imprese Bologna n° 226650/1996 BO - P.IVA IT 00829301209 - REA BO 367676 - Cod Fiscale 01995970363</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4><i class="fab fa-facebook-f"></i> <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i> <i class="fab fa-linkedin-in"></i> Social</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+<!-- scroll reveal javascript link -->
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- javascript link here -->
+
+<script src="script.js"></script>
+
+
+
+
+   </body>
+</html>

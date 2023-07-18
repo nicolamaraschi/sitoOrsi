@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Prodotti</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styleProdotti.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+        
+    
+    <div style="height: 50px; width: 100%; text-align: center; color:orange; font-size: medium;"><h1>Orsetto:Bucato Domestico</h1></div>
+    <!-- codice per avere slide  -->
+       <div class="img-slider">
+        <div class="slide active">
+          <img  style="width: 25%;" src="images/1.png" alt="">
+          <div class="info">
+            <h2>SMACCHIATORE Gr 700</h2>
+            <p>Sbiancante all'ossigeno attivo, ha una nuova formula ancora più efficace perchè è già attivo a 40°C ed agisce rapidamente sui tessuti. ORSETTO SMACCHIATUTTO è consigliato su tessuti bianche e colorati in cotone lino, misti e sintetici, ed è specifico per il bucato più difficile (tovaglie, asciugamani, lenzuola ecc.). L'ossigeno attivo che sviluppa a contatto con l'acqua, toglie agevolmente molti tipi di macchie, sbianca e rigenera tessuti ingialliti. ORSETTO SMACCHIATUTTO è consigliato per un'energica azione igienizzante sul bucato e aumenta la sensazione di pulito.</p>
+          </div>
+        </div>
+        <div class="slide">
+            <img  style="width: 25%; margin-top: 9em;" src="images/1tr.png" alt="">
+          <div class="info">
+            <h2>SACCO 18 Misurini</h2>
+            <p>Orsetto Lavatrice Superbucato è più concentrato ed efficace. Consente di ottenere ottimi risultati sulle macchie difficili già a basse temperature grazie al sapone naturale e agli enzimi. Lascia sui capi un gradevole profumo.</p>
+          </div>
+        </div>
+        <div class="slide">
+            <img  style="width: 25%; margin-top: 9em;" src="images/2tr.png" alt="">
+          <div class="info">
+            <h2>SACCO 70+3 Mis</h2>
+            <p>Orsetto Lavatrice Superbucato è più concentrato ed efficace. Consente di ottenere ottimi risultati sulle macchie difficili già a basse temperature grazie al sapone naturale e agli enzimi. Lascia sui capi un gradevole profumo.</p>
+          </div>
+        </div>
+        <div class="slide">
+            <img  style="width: 35%; " src="images/3tr.png" alt="">
+          <div class="info">
+            <h2>Astuccio Gr 640</h2>
+            <p>Orsetto Lavatrice Superbucato è più concentrato ed efficace. Consente di ottenere ottimi risultati sulle macchie difficili già a basse temperature grazie al sapone naturale e agli enzimi. Lascia sui capi un gradevole profumo.</p>
+          </div>
+        </div>
+        <div class="slide">
+            <img  style="width: 25%; margin-top: 9em; " src="images/4tr.png" alt="">
+          <div class="info">
+            <h2>Sacco 50 Misurini</h2>
+        
+          </div>
+        </div>
+        <div class="slide">
+            <img  style="width: 25%; margin-top: 9em;" src="images/5tr.png" alt="">
+          <div class="info">
+            <h2>Sacco 100 Misurini Kg. 6,200</h2>
+            
+          </div>
+        </div>
+        <div class="slide">
+            <img  style="width: 25%; margin-top: 9em;" src="images/7tr.png" alt="">
+          <div class="info">
+            <h2>Fustino 100 Mis. Kg 3</h2>
+            
+          </div>
+        </div>
+        <div class="slide">
+            <img  style="width: 25%; margin-top: 9em;" src="images/8tr.png" alt="">
+          <div class="info">
+            <h2>Flacone polvere abrasiva</h2>
+            
+          </div>
+        </div>
+        <div class="slide">
+            <img  style="width: 25%; margin-top: 9em;" src="images/9tr.png" alt="">
+          <div class="info">
+            <h2>Fustone 100 Mis. Kg. 6,2</h2>
+            
+          </div>
+        </div>
+        <div class="slide">
+            <img  style="width: 25%; margin-top: 9em;" src="images/10tr.png" alt="">
+          <div class="info">
+            <h2 >Astuccio Tabs Lavatrice</h2>
+
+          </div>
+        </div>
+        
+        
+        <div class="navigation">
+          <div class="btn active"></div>
+          <div class="btn"></div>
+          <div class="btn"></div>
+          <div class="btn"></div>
+          <div class="btn"></div>
+          <div class="btn"></div>
+          <div class="btn"></div>
+          <div class="btn"></div>
+          <div class="btn"></div>
+          <div class="btn"></div>
+        </div>
+      </div>
+  
+      <script type="text/javascript">
+      var slides = document.querySelectorAll('.slide');
+      var btns = document.querySelectorAll('.btn');
+      let currentSlide = 1;
+  
+      // Javascript for image slider manual navigation
+      var manualNav = function(manual){
+        slides.forEach((slide) => {
+          slide.classList.remove('active');
+  
+          btns.forEach((btn) => {
+            btn.classList.remove('active');
+          });
+        });
+  
+        slides[manual].classList.add('active');
+        btns[manual].classList.add('active');
+      }
+  
+      btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+          manualNav(i);
+          currentSlide = i;
+        });
+      });
+  
+      // Javascript for image slider autoplay navigation
+      var repeat = function(activeClass){
+        let active = document.getElementsByClassName('active');
+        let i = 1;
+  
+        var repeater = () => {
+          setTimeout(function(){
+            [...active].forEach((activeSlide) => {
+              activeSlide.classList.remove('active');
+            });
+  
+          slides[i].classList.add('active');
+          btns[i].classList.add('active');
+          i++;
+  
+          if(slides.length == i){
+            i = 0;
+          }
+          if(i >= slides.length){
+            return;
+          }
+          repeater();
+        }, 10000);
+        }
+        repeater();
+      }
+      repeat();
+      </script>
+
+
+
+
+
+
+
+
+  <!-- codice per avere slide  -->
+  <div class="img-slider">
+    <div class="slide active">
+      <img  style="width: 25%;" src="images/1.png" alt="">
+      <div class="info">
+        <h2>SMACCHIATORE Gr 700</h2>
+        <p>Sbiancante all'ossigeno attivo, ha una nuova formula ancora più efficace perchè è già attivo a 40°C ed agisce rapidamente sui tessuti. ORSETTO SMACCHIATUTTO è consigliato su tessuti bianche e colorati in cotone lino, misti e sintetici, ed è specifico per il bucato più difficile (tovaglie, asciugamani, lenzuola ecc.). L'ossigeno attivo che sviluppa a contatto con l'acqua, toglie agevolmente molti tipi di macchie, sbianca e rigenera tessuti ingialliti. ORSETTO SMACCHIATUTTO è consigliato per un'energica azione igienizzante sul bucato e aumenta la sensazione di pulito.</p>
+      </div>
+    </div>
+    <div class="slide">
+        <img  style="width: 25%; margin-top: 9em;" src="images/1tr.png" alt="">
+      <div class="info">
+        <h2>SACCO 18 Misurini</h2>
+        <p>Orsetto Lavatrice Superbucato è più concentrato ed efficace. Consente di ottenere ottimi risultati sulle macchie difficili già a basse temperature grazie al sapone naturale e agli enzimi. Lascia sui capi un gradevole profumo.</p>
+      </div>
+    </div>
+    <div class="slide">
+        <img  style="width: 25%; margin-top: 9em;" src="images/2tr.png" alt="">
+      <div class="info">
+        <h2>SACCO 70+3 Mis</h2>
+        <p>Orsetto Lavatrice Superbucato è più concentrato ed efficace. Consente di ottenere ottimi risultati sulle macchie difficili già a basse temperature grazie al sapone naturale e agli enzimi. Lascia sui capi un gradevole profumo.</p>
+      </div>
+    </div>
+    
+    
+    
+    <div class="navigation">
+      <div class="btn active"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var slides = document.querySelectorAll('.slide');
+    var btns = document.querySelectorAll('.btn');
+    currentSlide = 1;
+
+    // Javascript for image slider manual navigation
+    var manualNav = function(manual){
+      slides.forEach((slide) => {
+        slide.classList.remove('active');
+
+        btns.forEach((btn) => {
+          btn.classList.remove('active');
+        });
+      });
+
+      slides[manual].classList.add('active');
+      btns[manual].classList.add('active');
+    }
+
+    btns.forEach((btn, i) => {
+      btn.addEventListener("click", () => {
+        manualNav(i);
+        currentSlide = i;
+      });
+    });
+
+    // Javascript for image slider autoplay navigation
+    var repeat = function(activeClass){
+      let active = document.getElementsByClassName('active');
+      let i = 1;
+
+      var repeater = () => {
+        setTimeout(function(){
+          [...active].forEach((activeSlide) => {
+            activeSlide.classList.remove('active');
+          });
+
+        slides[i].classList.add('active');
+        btns[i].classList.add('active');
+        i++;
+
+        if(slides.length == i){
+          i = 0;
+        }
+        if(i >= slides.length){
+          return;
+        }
+        repeater();
+      }, 10000);
+      }
+      repeater();
+    }
+    repeat();
+    </script>
+
+    
+
+
+
+ <!-- codice per avere slide  -->
+ <div class="img-slider">
+    <div class="slide active">
+      <img  style="width: 25%;" src="images/1st.png" alt="">
+      <div class="info">
+        <h2>SMACCHIATORE Gr 700</h2>
+        <p>Sbiancante all'ossigeno attivo, ha una nuova formula ancora più efficace perchè è già attivo a 40°C ed agisce rapidamente sui tessuti. ORSETTO SMACCHIATUTTO è consigliato su tessuti bianche e colorati in cotone lino, misti e sintetici, ed è specifico per il bucato più difficile (tovaglie, asciugamani, lenzuola ecc.). L'ossigeno attivo che sviluppa a contatto con l'acqua, toglie agevolmente molti tipi di macchie, sbianca e rigenera tessuti ingialliti. ORSETTO SMACCHIATUTTO è consigliato per un'energica azione igienizzante sul bucato e aumenta la sensazione di pulito.</p>
+      </div>
+    </div>
+    <div class="slide">
+        <img  style="width: 25%; margin-top: 9em;" src="images/2st.png" alt="">
+      <div class="info">
+        <h2>SACCO 18 Misurini</h2>
+        <p>Orsetto Lavatrice Superbucato è più concentrato ed efficace. Consente di ottenere ottimi risultati sulle macchie difficili già a basse temperature grazie al sapone naturale e agli enzimi. Lascia sui capi un gradevole profumo.</p>
+      </div>
+    </div>
+    <div class="slide">
+        <img  style="width: 25%; margin-top: 9em;" src="images/3st.png" alt="">
+      <div class="info">
+        <h2>SACCO 70+3 Mis</h2>
+        <p>Orsetto Lavatrice Superbucato è più concentrato ed efficace. Consente di ottenere ottimi risultati sulle macchie difficili già a basse temperature grazie al sapone naturale e agli enzimi. Lascia sui capi un gradevole profumo.</p>
+      </div>
+    </div>
+    <div class="slide">
+        <img  style="width: 35%; " src="images/4st.png" alt="">
+      <div class="info">
+        <h2>Astuccio Gr 640</h2>
+        <p>Orsetto Lavatrice Superbucato è più concentrato ed efficace. Consente di ottenere ottimi risultati sulle macchie difficili già a basse temperature grazie al sapone naturale e agli enzimi. Lascia sui capi un gradevole profumo.</p>
+      </div>
+   
+    
+    
+    <div class="navigation">
+      <div class="btn active"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+      <div class="btn"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+  var slides = document.querySelectorAll('.slide');
+  var btns = document.querySelectorAll('.btn');
+   currentSlide = 1;
+
+  // Javascript for image slider manual navigation
+  var manualNav = function(manual){
+    slides.forEach((slide) => {
+      slide.classList.remove('active');
+
+      btns.forEach((btn) => {
+        btn.classList.remove('active');
+      });
+    });
+
+    slides[manual].classList.add('active');
+    btns[manual].classList.add('active');
+  }
+
+  btns.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+      manualNav(i);
+      currentSlide = i;
+    });
+  });
+
+  // Javascript for image slider autoplay navigation
+  var repeat = function(activeClass){
+    let active = document.getElementsByClassName('active');
+    let i = 1;
+
+    var repeater = () => {
+      setTimeout(function(){
+        [...active].forEach((activeSlide) => {
+          activeSlide.classList.remove('active');
+        });
+
+      slides[i].classList.add('active');
+      btns[i].classList.add('active');
+      i++;
+
+      if(slides.length == i)i = 0;
+      if(i >= slides.length)return;
+      
+      repeater();
+    }, 10000);
+    }
+    repeater();
+  }
+  repeat();
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="height: 50px; width: 100%; text-align: center; color:orange; font-size: medium;"><h1>I Nostri Prodotti</h1></div>
+<div class="our-clients", class="our-menu-food">
+    <ul>
+        <li> <img src="images/1.png" alt=""> <img src="images/1.png" alt=""> </li>
+        <li> <img src="images/2.png" alt=""> <img src="images/2.png" alt=""> </li>
+        <li> <img src="images/3.png" alt=""> <img src="images/3.png" alt=""> </li>
+        <li> <img src="images/4.png" alt=""> <img src="images/4.png" alt=""> </li>
+        <li> <img src="images/5.png" alt=""> <img src="images/5.png" alt=""> </li>
+        <li> <img src="images/6.png" alt=""> <img src="images/6.png" alt=""> </li>
+        <li> <img src="images/7.png" alt=""> <img src="images/7.png" alt=""> </li>
+        <li> <img src="images/8.png" alt=""> <img src="images/8.png" alt=""> </li>
+        <li> <img src="images/9.png" alt=""> <img src="images/9.png" alt=""> </li>
+        <li> <img src="images/10.png" alt=""> <img src="images/10.png" alt=""> </li>
+        <li> <img src="images/11.png" alt=""> <img src="images/11.png" alt=""> </li>
+        <li> <img src="images/12.png" alt=""> <img src="images/12.png" alt=""> </li>
+        <li> <img src="images/13.png" alt=""> <img src="images/13.png" alt=""> </li>
+        <li> <img src="images/14.png" alt=""> <img src="images/14.png" alt=""> </li>
+      
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

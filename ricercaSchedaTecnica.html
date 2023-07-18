@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="icon" type="image/x-icon" href="images/logo orsi.ico">
+
+  <!-- Importa Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" integrity="sha512-usVBAd66/NpVNfBge19gws2j6JZinnca12rAe2l+d+QkLU9fiG02O1X8Q6hepIpr/EYKZvKx/I9WsnujJuOmBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Importa jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-6/Jqx8jNlY5cXcL3d9yZfLr8+wPFJmMiqv6dK+3t/c5GcGp2G4fF7t1bJ5xzdm2eGJyMEbHMAf5YzBfZ5rXb2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Importa Popper.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js" integrity="sha512-6zG8i4fMeeQDf9K1KULR9f2K0mN6ZnY7oU8RiW0Ks5v6GwZQJDP2nK9c4xN/x3qJYjKkM6J6vDqyW5Gz5z6pWQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Importa Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand ml-0 custom-navbar-brand" href="#">
+        <img src="images/LOGO ORSI.png" alt="logo orsi" class="logo-img">
+        <img src="images/nome orsi.png" alt="logo orsi" class="logo-img">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto nav-items">
+          <li class="nav-item">
+            <a data-translation="innovazione" class="nav-link" href="main.html">Innovazioni</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a data-translation="bucatoProfessionale" class="nav-link dropdown-toggle" href="#" id="navbarDropdownInnovazioni"
+              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Bucato Professionale
+            </a>
+            <div class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownInnovazioni">
+              <a class="dropdown-item" href="prodottiBit.html">BIT</a>
+              <a class="dropdown-item" href="prodottiDolomitenWeiss.html">Dolomiten Weiss</a>
+              <a class="dropdown-item" href="prodottiDolomitenWeissBiologico.html">Dolomiten Weiss Biologico</a>
+              <a class="dropdown-item" href="prodottiTresil.html">Tresil</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a data-translation="bucatoDomestico" class="nav-link dropdown-toggle" href="#" id="navbarDropdownBucatoDomestico"
+              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Bucato Domestico
+            </a>
+            <div class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownBucatoDomestico">
+              <a class="dropdown-item" href="prodottiSuora.html">La Suora</a>
+              <a class="dropdown-item" href="prodottiOrsetto.html">Orsetto</a>
+              <a class="dropdown-item" href="prodottiOrsettoBiologico.html">Orsetto Biologico</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a data-translation="contatti" class="nav-link" href="contatti.html">Contatti</a>
+          </li>
+          <li class="nav-item">
+            <a data-translation="schedaTecnica" class="nav-link" href="ricercaSchedaTecnica.html">Ottieni scheda Tecnica/sicurezza</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="setLanguage('it')">
+                <img src="loghi/italy.ico" alt="Icona Bandiera" class="icona-bandiera">
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#" onclick="setLanguage('en')">
+              <img src="loghi/United-Kingdom-flag-icon.png" alt="Icona Bandiera" class="icona-bandiera">
+            </a>
+          </li>
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+<script src="translation.js"></script>
+
+<script>
+const savedLanguage = localStorage.getItem('language'); 
+
+if (savedLanguage) {
+  setLanguage(savedLanguage);
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+
+
+
+<div id="searchContainer">
+  <h1 class="title">Ricerca Prodotti</h1>
+  <div class="search-input">
+    <input type="text" id="searchInput" placeholder="Inserisci il codice prodotto">
+    <button onclick="searchProduct()">Cerca</button>
+  </div>
+</div>
+
+<div id="resultContainer" style="display: none;">
+  <h3 id="productCode" style="text-align: center;"></h3>
+  <div style="display: flex; justify-content: center;">
+    <a id="pdf1Link" href="#" download style="margin: 10px;">Visualizza scheda Tecnica</a>
+    <a id="pdf2Link" href="#" download style="margin: 10px;">Visualizza scheda Sicurezza</a>
+  </div>
+</div>
+
+<style>
+  #searchContainer {
+    text-align: center;
+    padding: 20px;
+
+  }
+
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .search-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .search-input input[type="text"] {
+    width: 400px;
+    max-width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .search-input button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  #resultContainer {
+    text-align: center;
+    padding: 20px;
+  }
+
+  #productCode {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  #resultContainer a {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+
+
+
+<script>
+  function searchProduct() {
+    var searchInput = document.getElementById("searchInput").value;
+    var resultContainer = document.getElementById("resultContainer");
+    var productCode = document.getElementById("productCode");
+    var pdf1Link = document.getElementById("pdf1Link");
+    var pdf2Link = document.getElementById("pdf2Link");
+
+    // Array di oggetti con i codici e i relativi PDF
+    var products = [
+      {
+        code: "001",
+        pdf1: "scheda sicurezza/500120_DOLOMITENWSUPER_SDS_IT_Rel._3.pdf",
+        pdf2: "scheda tecnica/500205_ST_Prof.pdf"
+      },
+      {
+        code: "002",
+        pdf1: "scheda sicurezza/500120_DOLOMITENWSUPER_SDS_IT_Rel._3.pdf",
+        pdf2: "scheda tecnica/500205_ST_Prof.pdf"
+      },
+      // Aggiungi altre associazioni di codici e PDF qui
+    ];
+
+    // Verifica se il codice prodotto è presente nell'array
+    var product = products.find(function(item) {
+      return item.code === searchInput;
+    });
+
+    if (product) {
+      // Mostra il risultato e i link per il download dei PDF
+      resultContainer.style.display = "block";
+      productCode.innerText = "Codice prodotto: " + product.code;
+      pdf1Link.href = product.pdf1;
+      pdf2Link.href = product.pdf2;
+    } else {
+      // Mostra un messaggio di fallimento della ricerca
+      resultContainer.style.display = "none";
+      alert("Codice prodotto non trovato");
+    }
+  }
+</script>
+
+
+
+<footer class="footer" style="margin-top: 200px;">
+  <div class="container">
+      <div class="row">
+          <div class="footer-col">
+              <h4><i class="fas fa-phone"></i> Telefono</h4>
+              <ul>
+                  <li><a href="#">+39 051 6671000</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4><i class="far fa-envelope"></i> Email</h4>
+              <ul>
+                  <li><a href="#">info@orsidetersivi.com</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4><i class="far fa-envelope"></i> PEC</h4>
+              <ul>
+                  <li><a href="#">orsidetersivi@pec.it</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4><i class="fas fa-id-card"></i> C.F.</h4>
+              <ul>
+                  <li><a href="#">Registro Imprese Bologna n° 226650/1996 BO - P.IVA IT 00829301209 - REA BO 367676 - Cod Fiscale 01995970363</a></li>
+              </ul>
+          </div>
+          <div class="footer-col">
+              <h4><i class="fab fa-facebook-f"></i> <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i> <i class="fab fa-linkedin-in"></i> Social</h4>
+              <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer>
+
+
+<!-- scroll reveal javascript link -->
+
+<script src="https://unpkg.com/scrollreveal"></script>
+
+<!-- javascript link here -->
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
