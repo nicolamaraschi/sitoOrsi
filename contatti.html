@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  
+
     <link rel="stylesheet" href="style.css">
     <!-- Importa Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" integrity="sha512-usVBAd66/NpVNfBge19gws2j6JZinnca12rAe2l+d+QkLU9fiG02O1X8Q6hepIpr/EYKZvKx/I9WsnujJuOmBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -54,6 +58,27 @@
     .contact-details p {
       margin: 10px 0;
     }
+
+    .content-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.map-container {
+  flex-basis: 100%;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.contact-details {
+  flex-basis: 100%;
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+/* Resto del tuo stile CSS rimane invariato */
+
 
     /* Stili per la responsive design */
     @media (min-width: 768px) {
@@ -150,10 +175,10 @@ if (savedLanguage) {
 </script>
 
 
+
 <div class="container">
   <div class="map-container">
-    <!-- Inserisci il codice di Google Maps qui -->
-    <!-- Assicurati di utilizzare la tua chiave API di Google Maps -->
+    <div id="map" style="height: 400px;"></div>
   </div>
   <div class="contact-details">
     <h2><i class="fas fa-address-card"></i> Contatti</h2>
@@ -165,32 +190,25 @@ if (savedLanguage) {
   </div>
 </div>
 
-  <!-- Includi il file JavaScript dell'API di Google Maps con la tua chiave API -->
-<script src="https://maps.googleapis.com/maps/api/js?client=google-maps-embed&paint_origin=&libraries=geometry,search&v=3.exp&language=it&region=it&callback=onApiLoad" async defer></script>
+
 
 <script>
-  // Inizializza la mappa di Google
-  function initMap() {
-    var location = { lat: 44.498973, lng: 11.551744 }; // Coordinate per via C. Bassi 22, 40015 Galliera (BO)
-    var map = new google.maps.Map(document.querySelector('.map-container'), {
-      zoom: 15,
-      center: location
-    });
-    var marker = new google.maps.Marker({
-      position: location,
-      map: map
-    });
-  }
+  // Inizializza la mappa
+  var map = L.map('map').setView([44.498973, 11.551744], 15); // Coordinate e livello di zoom
 
-  // Gestisci eventuali errori di caricamento dell'API di Google Maps
-  function onApiLoad() {
-    try {
-      initMap();
-    } catch (e) {
-      console.error('Errore di caricamento della mappa:', e);
-    }
-  }
+  // Aggiungi una mappa di base OpenStreetMap
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: 'Mappa fornita da <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  }).addTo(map);
+
+  // Aggiungi un marker alla mappa
+  L.marker([44.498973, 11.551744]).addTo(map)
+    .bindPopup("Posizione: Via C. Bassi 22, 40015 Galliera (BO)")
+    .openPopup();
 </script>
+
+
 
 
 

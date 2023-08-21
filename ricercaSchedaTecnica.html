@@ -106,13 +106,6 @@ if (savedLanguage) {
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 
-
-
-
-
-
-
-
 <div id="searchContainer">
   <h1 class="title">Ricerca Prodotti</h1>
   <div class="search-input">
@@ -189,7 +182,7 @@ if (savedLanguage) {
 </style>
 
 
-
+<!--
 <script>
   function searchProduct() {
     var searchInput = document.getElementById("searchInput").value;
@@ -231,7 +224,45 @@ if (savedLanguage) {
     }
   }
 </script>
+-->
 
+<script>
+
+function searchProduct() {
+  var searchInput = document.getElementById("searchInput").value;
+  var resultContainer = document.getElementById("resultContainer");
+  var productCode = document.getElementById("productCode");
+  var pdf1Link = document.getElementById("pdf1Link");
+  var pdf2Link = document.getElementById("pdf2Link");
+
+  // Effettua una richiesta AJAX per ottenere l'elenco dei file PDF dal server
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", "/api/getpdfs?searchInput=" + searchInput, true);
+
+  xhr.onload = function () {
+    if (xhr.status === 200) {
+      var response = JSON.parse(xhr.responseText);
+
+      if (response.found) {
+        // Mostra il risultato e i link per il download dei PDF
+        resultContainer.style.display = "block";
+        productCode.innerText = "Codice prodotto: " + searchInput;
+        pdf1Link.href = response.pdf1;
+        pdf2Link.href = response.pdf2;
+      } else {
+        // Mostra un messaggio se il prodotto non è stato trovato
+        resultContainer.style.display = "none";
+        alert("Prodotto non trovato.");
+      }
+    } else {
+      // Gestisci errori nella richiesta AJAX
+      console.error("Errore nella richiesta AJAX");
+    }
+  };
+
+  xhr.send();
+}
+</script>
 
 
 <footer class="footer" style="margin-top: 200px;">

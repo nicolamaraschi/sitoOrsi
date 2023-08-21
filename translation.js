@@ -28,23 +28,16 @@ function setLanguage(lang) {
                 'titoloProduzione':'PRODUZIONE',
                 'descrizioneProduzione':'Lo Stabilimento Produttivo In Italia Ha La Capacità Di 4 Ton/Ora Con Linee Di Confezionamento E Pallettizzazione Automatiche E Robotizzate. Ogni Fase Della Lavorazione È Seguita Attraverso Sistematiche Analisi Chimiche Finalizzate Ad Un Continuo Controllo Delle Performance Produttive E Allo Sviluppo Dei Processi Produttivi.',
 
-                'titoloCertificazioni':'Le Nostre Certificazioni',
-                'titoloBiologico':'Certificato Detersivo Biologico',
-                'descrizioneBiologico1':'Il Nostro Detersivo Biologico È Certificato Da Un autorità Riconosciuta Nel Settore Dell ecologia E Dell ambiente. Questa Certificazione Attesta Che Il Nostro Prodotto Rispetta Rigorosi Standard Di Produzione Ecologica, Utilizzando Ingredienti Naturali E Sostenibili',
-                'descrizioneBiologico2':'Il Certificato Detersivo Biologico Garantisce Che Il Nostro Prodotto Non Contenga Sostanze Chimiche Nocive Per L ambiente E Per La Salute Umana. Inoltre, È Prodotto Con Metodi Che Minimizzano L impatto Ambientale Durante Tutto Il Ciclo Di Vita, Dalla Produzione All uso E Allo Smaltimento.',
-                'titoloVeritas':'Certificato Bureau Veritas',
-                'descrizioneVeritas1':'Il Nostro Prodotto È Stato Sottoposto A Una Valutazione Approfondita E Ha Ottenuto Il Certificato Rilasciato Da Bureau Veritas, Un organizzazione Leader Nel Settore Delle Certificazioni.',
-                'descrizioneVeritas2':'Bureau Veritas È Riconosciuta A Livello Internazionale Per La Sua Competenza E Indipendenza Nelle Valutazioni Di Conformità. Il Certificato Bureau Veritas Attesta Che Il Nostro Prodotto Soddisfa Rigorosi Standard Di Qualità, Sicurezza E Sostenibilità.',
-                'descrizioneVeritas3':'La certificazione Bureau Veritas è un segno di fiducia per i consumatori, poiché conferma che il nostro prodotto è stato sottoposto a controlli e test accurati per garantire la sua qualità e conformità alle normative vigenti.',
+                
 
                 'titoloBrands':'I Nostri Brand',
                 'descrizioneBrands':'Descrizione Principale Dei Nostri Servizi',
 
                 'titoloNovita':'Novità',
-                'descrizioneNovita1':'Siamo Lieti Di Annunciare L avvio Delle Operazioni Della Divisione Cosmetica Di Orsi Group. Situata Nelle Vicinanze Della Nostra Sede Attuale, Questa Nuova Divisione Rappresenta Un importante Espansione Per Lazienda.',
-                'descrizioneNovita2':'La Divisione Cosmetica Dispone Di Un area Dedicata Di 6.000 M2, Di Cui 1.500 M2 Coperti. Qui È Stato Creato Un Sito Produttivo Completamente Attrezzato Per La Produzione Di Cosmetici, Che Include Un Laboratorio Di Analisi, Ricerca E Sviluppo.',
-                'descrizioneNovita3':'La Gestione Di Questa Divisione È Affidata A Un Team Competente Di Tecnici E Ricercatori Cosmetologi, Pronti A Fare Il Loro Debutto Nel Settore. Siamo Entusiasti Di Unire Le Nostre Competenze E La Nostra Passione Per La Cosmesi Per Offrire Prodotti Di Alta Qualità E Soluzioni Innovative Ai Nostri Clienti.',
-                'descrizioneNovita4':'Questo Nuovo Sviluppo Rappresenta Un Importante Passo Avanti Per Orsi Group Nel Settore Cosmetico, E Siamo Pronti Ad Affrontare Questa Nuova Sfida Con Impegno E Determinazione. Continueremo A Lavorare Duramente Per Offrire Prodotti Di Eccellenza E Per Soddisfare Le Esigenze Sempre Crescenti Dei Nostri Clienti.',
+                'descrizioneNovita1':'ORSI group e il suo Team È lieto di comunicare l’inizio dell’operatività della divisione Cosmetica Orsi. Locata nei pressi della nostra attuale sede comprende: Un’area dedicata di 6.000 M2 di cui 1.500 M2 coperti La creazione di un sito produttivo per la cosmesi e un laboratorio di analisi e ricerca e sviluppo dedicato. La gestione è affidata ad uno staff di tecnici e ricercatori, cosmetologi oggi pronti al debutto',
+                'descrizioneNovita2':'',
+                'descrizioneNovita3':'',
+                'descrizioneNovita4':'',
 
                 'titiloIdrocristalli':'IDROCRISTALLI',
                 'descrizioneIdrocristalli':'100% OLII ESSENZIALI NATURALI E BIOLOGICI',
@@ -79,23 +72,16 @@ function setLanguage(lang) {
                 'titoloProduzione':'PRODUCTION',
                 'descrizioneProduzione':'The production plant in Italy has a capacity of 4 tons per hour with automated and robotic packaging and palletizing lines. Every stage of the manufacturing process is monitored through systematic chemical analysis to ensure continuous control of production performance and development of manufacturing processes.',
 
-                'titoloCertificazioni':'Our Certifications',
-                'titoloBiologico':'Organic Detergent Certification',
-                'descrizioneBiologico1':'Our organic detergent is certified by a recognized authority in the field of ecology and environment. This certification attests that our product meets rigorous standards of ecological production, using natural and sustainable ingredients.',
-                'descrizioneBiologico2':'The organic detergent certificate guarantees that our product does not contain harmful chemicals for the environment and human health. Additionally, it is produced using methods that minimize environmental impact throughout its life cycle, from production to use and disposal.',
-                'titoloVeritas':'Bureau Veritas Certificate',
-                'descrizioneVeritas1':'Our product has undergone a thorough evaluation and has obtained the certification issued by Bureau Veritas, a leading organization in the field of certifications.',
-                'descrizioneVeritas2':'Bureau Veritas is internationally recognized for its expertise and independence in conformity assessments. The Bureau Veritas certification attests that our product meets rigorous standards of quality, safety, and sustainability.',
-                'descrizioneVeritas3':'La certificazione Bureau Veritas è un segno di fiducia per i consumatori, poiché conferma che il nostro prodotto è stato sottoposto a controlli e test accurati per garantire la sua qualità e conformità alle normative vigenti.',
+                
 
                 'titoloBrands':'Our Brands',
                 'descrizioneBrands':'Main description of our services',
 
                 'titoloNovita':'News',
-                'descrizioneNovita1':'We are pleased to announce the launch of Orsi Groups cosmetic division. Located near our current headquarters, this new division represents a significant expansion for the company.',
-                'descrizioneNovita2':'The cosmetic division has a dedicated area of 6,000 m2, including 1,500 m2 of covered space. Here, a fully equipped production site has been established for cosmetic manufacturing, which includes an analysis laboratory for research and development.',
-                'descrizioneNovita3':'The management of this division is entrusted to a competent team of technicians and cosmetic researchers, ready to make their debut in the industry. We are excited to combine our expertise and passion for cosmetics to offer high-quality products and innovative solutions to our customers.',
-                'descrizioneNovita4':'This new development represents a significant step forward for Orsi Group in the cosmetics industry, and we are ready to face this new challenge with commitment and determination. We will continue to work hard to provide excellent products and meet the ever-growing needs of our customers.',
+                'descrizioneNovita1':'ORSI Group and its team are pleased to announce the start of operations of the Orsi Cosmetics division. Located near our current headquarters, it encompasses: a dedicated area of 6,000 square meters, of which 1,500 square meters are covered. This includes the establishment of a production site for cosmetics and a laboratory for analysis and dedicated research and development. The management is entrusted to a team of technicians and researchers, cosmetologists who are ready for their debut today.',
+                'descrizioneNovita2':'',
+                'descrizioneNovita3':'',
+                'descrizioneNovita4':'',
 
                 'titiloIdrocristalli':'IDROCRISTALLI',
                 'descrizioneIdrocristalli':'100% NATURAL AND ORGANIC ESSENTIAL OILS',
