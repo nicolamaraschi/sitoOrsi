@@ -2,6 +2,7 @@
 /* CSS personalizzato */
 /* CSS personalizzato */
 
+
 /* Imposta la dimensione del font per tutti gli elementi nella navbar */
 .navbar-nav * {
   font-size: 12px; /* Modifica il valore secondo le tue preferenze */
@@ -697,6 +698,14 @@ ul{
   .footer-col{
     width: 100%;
     margin-bottom: 30px;
+  }
+  .footer{
+    background-color: #24262b;
+    width: 100%;
+    height: 100%;
+    padding: 50px 0;
+    position: relative;
+    text-align: center;
   }
 }
 
