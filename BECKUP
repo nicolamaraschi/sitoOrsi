@@ -1,0 +1,148 @@
+/*chi siamo*/
+
+/* Stili per la sezione "Chi Siamo" */
+.description {
+  color: white;
+}
+
+.our-menu-food {
+  background-color: var(--about-sec);
+}
+
+.our-menu-food h1 {
+  color: var(--btn-color);
+  font-size: 45px;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.main-menu-food {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.inner-menu-food {
+  flex: 1 1 calc(33.33% - 20px); /* 3 box su una riga */
+  margin: 10px; /* Spazio tra i box */
+  max-width: calc(33.33% - 20px); /* Imposta larghezza massima per 3 box */
+}
+
+/* Classe per il box aggiunto in fondo */
+.inner-menu-food.large {
+  flex-basis: 100%; /* Occupa tutta la larghezza in una riga */
+  max-width: 100%;
+}
+
+.menu-food-content {
+  width: 100%;
+}
+
+.menu-food-content img {
+  width: 100%;
+  max-width: 40%; /* Imposta larghezza massima dell'immagine */
+  height: auto;
+  object-fit: cover;
+}
+
+.menu-food-text {
+  padding: 2rem;
+}
+
+.menu-food-text h2 {
+  color: var(--btn-color);
+  font-size: 30px;
+}
+
+.menu-food-text p {
+  color: white;
+  font-size: 18px;
+  margin: 2rem 0;
+}
+
+.menu-food-text p span {
+  color: #e58f00;
+  padding: 0.5rem 1.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.menu-food-text p:hover span {
+  border: 1px solid white;
+  background: var(--btn-color);
+  color: white;
+  transform: scale(1.1);
+}
+
+.before {
+  background-color: #1d1d23;
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.before img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.main-footer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-footer img {
+  width: 200px;
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 3rem;
+  }
+  .icons div {
+    display: initial;
+  }
+
+  /* home css desing */
+
+  .home-text-content {
+    padding: 0 2rem;
+  }
+
+  .home-image img {
+    transform: translate(0%, 0%);
+  }
+
+  .about-content .about-inner-content img {
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+  }
+  .quality-content {
+    padding: 1rem 2rem;
+  }
+  .quality-content h1 {
+    color: var(--about-sec);
+  }
+  .menu-main-content {
+    width: 100%;
+    border: 4px solid white;
+    padding: 1rem;
+  }
+
+  /* Modifiche per la visualizzazione laptop */
+  .main-menu-food {
+    gap: 20px;
+    flex-wrap: wrap; /* Wrapping in modalità laptop */
+  }
+
+  .inner-menu-food {
+    flex: 1 1 calc(25% - 20px); /* 4 box su una riga */
+  }
+
+  .inner-menu-food.large {
+    flex-basis: 100%; /* Occupa tutta la larghezza in modalità laptop */
+  }
+}

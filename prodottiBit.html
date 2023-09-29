@@ -2,20 +2,20 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
-  <!-- Importa Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" integrity="sha512-usVBAd66/NpVNfBge19gws2j6JZinnca12rAe2l+d+QkLU9fiG02O1X8Q6hepIpr/EYKZvKx/I9WsnujJuOmBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-      
-  <!-- Importa jQuery -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-6/Jqx8jNlY5cXcL3d9yZfLr8+wPFJmMiqv6dK+3t/c5GcGp2G4fF7t1bJ5xzdm2eGJyMEbHMAf5YzBfZ5rXb2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" integrity="sha512-usVBAd66/NpVNfBge19gws2j6JZinnca12rAe2l+d+QkLU9fiG02O1X8Q6hepIpr/EYKZvKx/I9WsnujJuOmBA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+       
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
 
-  <!-- Importa Popper.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js" integrity="sha512-6zG8i4fMeeQDf9K1KULR9f2K0mN6ZnY7oU8RiW0Ks5v6GwZQJDP2nK9c4xN/x3qJYjKkM6J6vDqyW5Gz5z6pWQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <!-- Importa jQuery -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+ 
+   <!-- Importa Popper.js -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js" integrity="sha512-6zG8i4fMeeQDf9K1KULR9f2K0mN6ZnY7oU8RiW0Ks5v6GwZQJDP2nK9c4xN/x3qJYjKkM6J6vDqyW5Gz5z6pWQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ 
+   <!-- Importa Bootstrap JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <!-- Importa Bootstrap JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
     /* Stili di base */
     * {
@@ -98,67 +98,98 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
-      <a class="navbar-brand ml-0 custom-navbar-brand" href="#">
-        <img src="images/LOGO ORSI.png" alt="logo orsi" class="logo-img">
-        <img src="images/nome orsi.png" alt="logo orsi" class="logo-img">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto nav-items">
-          <li class="nav-item">
-            <a data-translation="innovazione" class="nav-link" href="index.html">Innovazioni</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a data-translation="bucatoProfessionale" class="nav-link dropdown-toggle" href="#" id="navbarDropdownInnovazioni"
-              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Bucato Professionale
-            </a>
-            <div class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownInnovazioni">
-              <a class="dropdown-item" href="prodottiBit.html">BIT</a>
-              <a class="dropdown-item" href="prodottiDolomitenWeiss.html">Dolomiten Weiss</a>
-              <a class="dropdown-item" href="prodottiDolomitenWeissBiologico.html">Dolomiten Weiss Biologico</a>
-              <a class="dropdown-item" href="prodottiTresil.html">Tresil</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a data-translation="bucatoDomestico" class="nav-link dropdown-toggle" href="#" id="navbarDropdownBucatoDomestico"
-              role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Bucato Domestico
-            </a>
-            <div class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownBucatoDomestico">
-              <a class="dropdown-item" href="prodottiSuora.html">La Suora</a>
-              <a class="dropdown-item" href="prodottiOrsetto.html">Orsetto</a>
-              <a class="dropdown-item" href="prodottiOrsettoBiologico.html">Orsetto Biologico</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a data-translation="contatti" class="nav-link" href="contatti.html">Contatti</a>
-          </li>
-          <li class="nav-item">
-            <a data-translation="schedaTecnica" class="nav-link" href="ricercaSchedaTecnica.html">Ottieni scheda Tecnica/sicurezza</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#" onclick="setLanguage('it')">
-                <img src="loghi/italy.ico" alt="Icona Bandiera" class="icona-bandiera">
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#" onclick="setLanguage('en')">
-              <img src="loghi/United-Kingdom-flag-icon.png" alt="Icona Bandiera" class="icona-bandiera">
-            </a>
-          </li>
-          
-          
-        </ul>
-      </div>
+        <a class="navbar-brand ml-0 custom-navbar-brand" href="#">
+            <img src="images/LOGO ORSI.png" alt="logo orsi" class="logo-img">
+            <img src="images/nome orsi.png" alt="logo orsi" class="logo-img">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ml-auto nav-items">
+                <li class="nav-item">
+                    <a class="nav-link" href="main.html#section0">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="main.html#section1">CHI SIAMO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="main.html#section2">RICERCA & INNOVAZIONE TECNOLOGICA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="main.html#section3">NOSTRI MARCHI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="main.html#section4">PRODUZIONE</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="main.html#section5">NOVITA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="main.html#section6">CERTIFICAZIONI</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+                        PRODOTTI
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownBucatoProfessionale" role="button" data-toggle="dropdown">
+                            Bucato Professionale
+                        </a>
+                        <div class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownBucatoProfessionale">
+                            <a class="dropdown-item" href="prodottiBit.html">BIT</a>
+                            <a class="dropdown-item" href="prodottiDolomitenWeiss.html">Dolomiten Weiss</a>
+                            <a class="dropdown-item" href="prodottiDolomitenWeissBiologico.html">Dolomiten Weiss Biologico</a>
+                            <a class="dropdown-item" href="prodottiTresil.html">Tresil</a>
+                        </div>
+                        <a class="dropdown-item dropdown-toggle" href="#" id="navbarDropdownBucatoDomestico" role="button" data-toggle="dropdown">
+                            Bucato Domestico
+                        </a>
+                        <div class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownBucatoDomestico">
+                            <a class="dropdown-item" href="prodottiSuora.html">La Suora</a>
+                            <a class="dropdown-item" href="prodottiOrsetto.html">Orsetto</a>
+                            <a class="dropdown-item" href="prodottiOrsettoBiologico.html">Orsetto Biologico</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ricercaSchedaTecnica.html">REGULATORY</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contatti.html">CONTATTI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="setLanguage('it')">
+                        <img src="loghi/italy.ico" alt="Icona Bandiera" class="icona-bandiera">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" onclick="setLanguage('en')">
+                        <img src="loghi/United-Kingdom-flag-icon.png" alt="Icona Bandiera" class="icona-bandiera">
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </nav>
+</nav>
+
+<script>
+  // Bootstrap doesn't support submenu out of the box. So we need to make it work using this JS
+  $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
+      if (!$(this).next().hasClass('show')) {
+          $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+      }
+      var $subMenu = $(this).next('.dropdown-menu');
+      $subMenu.toggleClass('show');
+      $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
+          $('.dropdown-submenu .show').removeClass('show');
+      });
+      return false;
+  });
+</script>
 
 
 <script src="translation.js"></script>
