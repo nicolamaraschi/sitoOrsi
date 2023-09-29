@@ -45,7 +45,7 @@
                 <ul class="navbar-nav ml-auto nav-items">
                     
                     <li class="nav-item">
-                        <a class="nav-link" href="#section1">HOME</a>
+                        <a id="section0-link" class="nav-link" href="#section0">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#section1">CHI SIAMO</a>
@@ -60,10 +60,10 @@
                         <a class="nav-link" href="#section4">PRODUZIONE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section5">CERTIFICAZIONI</a>
+                        <a class="nav-link" href="#section5">NOVITA</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#section6">NOVITA</a>
+                        <a class="nav-link" href="#section6">CERTIFICAZIONI</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
@@ -153,8 +153,9 @@ window.addEventListener('load', function() {
 <!-- FINE NAVBAR -->
 
 
- <!-- Sezione con effetto parallasse -->
- <div class="parallax-section">
+<p id="section0" style="position: relative; top: -100px;"></p>
+  <a  name="section0"></a> <!-- Questa riga è importante -->
+  <div class="parallax-section">
     <div class="parallax-text">
       <h1>ORSI S.L.R.</h1>
       <p>Industria Chimica "Orsi"</p>
@@ -163,6 +164,8 @@ window.addEventListener('load', function() {
       <!-- Inserisci qui il tuo tag di immagine -->
     </div>
   </div>
+
+  
   
 
 <!--
@@ -214,13 +217,15 @@ window.addEventListener('load', function() {
 -->
 
 
-
-<div id="section1" class="our-menu-food">
+<p id="section1" style="position: relative; top: -100px;"></p>
+<div  class="our-menu-food">
     <h2 style="color: white; text-align: center;">CHI SIAMO</h2>
-    <p class="description">Nata a Bologna nel 1907, la società è rimasta una delle poche realtà produttive italiane più interessanti sul mercato della detergenza in polvere domestica ed istituzionale. È in grado di competere per esperienza, tecnologia e qualità dei prodotti con le aziende leader del mercato.</p>
-    <p class="description">Oggi la società ORSI investe in Ricerca e Sviluppo puntando a nuove tecnologie nella detergenza e nella cosmesi.</p>
-    <p class="description"> con l’impegno che</p>
-
+    <p class="ecologia-text">Nata a Bologna nel 1907<br>
+        ORSI è una delle poche realtà italiane di rilievo nel mercato della detergenza in polvere domestica ed istituzionale<br>
+        Competendo per esperienza, tecnologia e qualità con le aziende leader del settore.<br>
+        Oggi, ORSI investe in Ricerca e Sviluppo per innovare nel campo della detergenza e della cosmesi.</p>    
+   
+    <h3 style="color: white; text-align: center;">Con l’impegno che</h2>
     <div class="main-menu-food">
         <div class="inner-menu-food">
             <div class="menu-food-content">
@@ -258,15 +263,15 @@ window.addEventListener('load', function() {
                 <img src="images/prendersi cura.webp" alt="">
                 <div class="menu-food-text">
                     <h3>Prendersi cura delle persone</h3>
-                    <p class="description">Cura dedicata al benessere di tutti.</p>
+                    <p  id="section2" class="description">Cura dedicata al benessere di tutti.</p>
                 </div>
             </div>
         </div>
     </div>
     
 
-    
-<div id="section2" class="innovation-section">
+<p id="section2" style="position: relative; top: -100px;"></p>   
+<div  class="innovation-section">
     <h2>RICERCA & INNOVAZIONE TECNOLOGIA</h2>
     <p>Il Nostro Team dedicato di Esperti in Ricerca e Sviluppo sono quotidianamente impegnati nella progettazione e industrializzazione di prodotti innovativi ad elevato contenuto tecnologico e di processi produttivi sempre più sostenibili per l’ambiente e le persone. Mettiamo l’accento sull’interdisciplinarietà, collaborando con Partner esterni e Università per garantire che le nostre soluzioni siano allineate alle più recenti scoperte scientifiche e tecnologiche.</p>
     
@@ -274,46 +279,59 @@ window.addEventListener('load', function() {
     <ul class="card-list"  class="container">
         <li class="card">
             <div class="card-content">
-                <h4>Lavorazione e soluzione di polveri e granuli difficili additivati con più del 50 % di liquidi</h4>
-                <p>Descrizione della card qui...</p>
+                <h4>Polveri e Granuli Difficili</h4>
+                <p>Per Purificazione delle acque<br>
+                    Per Edilizia<br>
+                    Per Detergenza auto<br>
+                    Per Detergenza pellami</p>
+                    
                 <img src="images/t1.png" alt="Immagine 1">
             </div>
         </li>
         <li class="card">
             <div class="card-content">
-                <h4>Cristalli booster super profumati idrosolubili per lavatrice / asciugatrice e deodorazione</h4>
-                <p>Descrizione della card qui...</p>
+                <h4>Cristalli super profumati idrosolubili </h4>
+                <p>Per Lavatrice<br>
+                    Per Asciugatrice<br>
+                    Per Aspirapolvere<br>
+                    Per Deodorazione cassetti armadi</p>                    
                 <img src="images/t2.png" alt="Immagine 2">
             </div>
         </li>
         <li class="card">
             <div class="card-content">
-                <h4>Profumi in polveri idrosolubili per la cosmesi e la deodorazione ambiente</h4>
-                <p>Descrizione della card qui...</p>
-                <img src="images/brand1.png" alt="Immagine 3">
+                <h4>Polvere Monodose idrosolubile</h4>
+                <p>Per Profumi in polveri<br>
+                    Per Detergenti <br>
+                    Per Pavimenti <br>
+                    Per Ammorbidente<br>
+                    Per Schiumogeno WC con probiotici</p>                    
+                <img src="images/t3.png" alt="Immagine 3">
             </div>
         </li>
         <li class="card">
             <div class="card-content">
-                <h4>Solidi Monodose Detergenza e Cosmesi con tecnologia da estrusione a freddo</h4>
-                <p>Descrizione della card qui...</p>
-                <img src="images/brand1.png" alt="Immagine 4">
+                <h4>Solidi Monodose Detergenza e Cosmesi</h4>
+                <p> Pastiglie Lavastoviglie<br>
+                    Pastiglie Lavatrice<br>
+                    Pastiglie Ammorbidente Superprofumato</p>                    
+                <img src="images/t4.png" alt="Immagine 4">
             </div>
         </li>
         <li class="card">
             <div class="card-content">
-                <h4>IDRO PODS monodose in polvere Lavatrice pavimenti WC</h4>
-                <p>Descrizione della card qui...</p>
-                <img src="images/brand1.png" alt="Immagine 5">
+                <h4>IDRO PODS monodose in polvere </h4>
+                <p>Lavatrice pavimenti</p>
+                <img src="images/t5.png" alt="Immagine 5">
             </div>
         </li>
     </ul>
-</div>
+</div >
    
 
-
-
-<div id="section3" class="carousel-container2 mb-4">
+<p id="section3" style="position: relative; top: -100px;"></p>   
+<p style="position: relative; top: -100px;"></p>
+<div  class="carousel-container2 mb-4">
     <h2 class="carousel-title" style="color: white;">I Nostri Brands</h2>
     <div class="carousel2">
         <div class="slide"><img src="images/brand1.png" alt="Image 1"></div>
@@ -322,7 +340,7 @@ window.addEventListener('load', function() {
         <div class="slide"><img src="images/brand4.png" alt="Image 4"></div>
     </div>
     <button class="prev-button" onclick="prevSlide()">←</button>
-    <button class="next-button" onclick="nextSlide()">→</button>
+    <button  class="next-button" onclick="nextSlide()">→</button>
 </div>
 
 
@@ -350,8 +368,8 @@ window.addEventListener('load', function() {
 </script>
 
 
-
-<div id="section4" class="enjoy-our-food">
+<p id="section4" style="position: relative; top: -100px;"></p>  
+<div  class="enjoy-our-food">
 
     <div class="food-main-content">
         <h2 data-translation="titoloProduzione" style="color: white; text-align: center;">PRODUZIONE</h2>
@@ -369,7 +387,7 @@ window.addEventListener('load', function() {
 
 
 
-
+<p id="section5"  style="position: relative; top: -100px;"></p>  
 <!-- NOVITA -->
 <div  class="about2">
       <div class="about-content2">
@@ -378,10 +396,10 @@ window.addEventListener('load', function() {
         </div>
       </div>
   
-      <div class="about-content">
+      <div   class="about-content">
         <div class="about-inner-content">
           <div class="about-text-content">
-            <h2 data-translation="titoloNovita" style="color: #fff; display: inline;">Novità</h2>
+            <h2  data-translation="titoloNovita" >Novità</h2>
             <p data-translation="descrizioneNovita1">ORSI group e il suo Team È lieto di comunicare l’inizio dell’operatività della divisione Cosmetica Orsi.
               Locata nei pressi della nostra attuale sede comprende:
               Un’area dedicata di 6.000 M2 di cui 1.500 M2 coperti
@@ -391,8 +409,10 @@ window.addEventListener('load', function() {
         </div>
       </div>
   </div>
-  
 
+
+
+  <p id="section6" style="position: relative; top: -100px;"></p>
 <h2 class="titolo-partner">CERTIFICAZIONI</h2>
 <div id="carouselExampleIndicators" class="carousel slide mb-4" data-ride="carousel" data-interval="3000">
     <ol class="carousel-indicators">
@@ -426,8 +446,6 @@ window.addEventListener('load', function() {
         <span class="sr-only">Next</span>
     </a>
 </div>
-
-
 
 
 

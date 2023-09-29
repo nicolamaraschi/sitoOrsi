@@ -43,7 +43,7 @@ function setLanguage(lang) {
                 'descrizioneIdrocristalli':'100% OLII ESSENZIALI NATURALI E BIOLOGICI',
 
                 'titoloSostenibile1':'Il Nostro Viaggio Nel Business Sostenibile',
-                'titoloSostenibile2':'nnovazione Responsabile',
+                'titoloSostenibile2':'Innovazione Responsabile',
                 'descrizioneSostenibile1':'L innovazione Responsabile È La Chiave Per Un Progresso Sostenibile E Duraturo',
                 'titoloSostenibile3':'Approvigionamento Etico',
                 'descrizioneSostenibile2':'Scegliere Un Approvvigionamento Etico È Una Scelta Responsabile Per Un Futuro Sostenibile.',

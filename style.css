@@ -2,6 +2,11 @@
 /* CSS personalizzato */
 /* CSS personalizzato */
 
+/* Aggiungi questo al tuo foglio di stile CSS */
+.navbar-panna {
+  background-color: #f1ceaa; /* Colore panna */
+}
+
 
 /* Imposta la dimensione del font per tutti gli elementi nella navbar */
 .navbar-nav * {
@@ -15,7 +20,7 @@
 
 /* Stili per i link nel menu a discesa espanso */
 .dropdown-menu.show a.dropdown-item {
-  color: rgb(255, 106, 0);
+  color: rgb(225, 53, 110);
 }
 
 /* Stili per i link attivi nel menu a discesa espanso */
@@ -52,7 +57,7 @@
 }
 
 .nav-items .dropdown-menu.sub-menu a.dropdown-item {
-  color: rgb(255, 106, 0);/* Colore del testo per i sottoprodotti */
+  color: rgb(244, 140, 13);/* Colore del testo per i sottoprodotti */
 }
 
 .nav-items .dropdown-menu.sub-menu a.dropdown-item.active {
@@ -216,23 +221,10 @@ nav .sub-menu li a:hover {
 }
 
 
-
-
-
-
 :root{
     --btn-color:#e58f00;
     --about-sec:#1d1d23;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -333,13 +325,16 @@ nav .sub-menu li a:hover {
 }
 .food-main-content h1{
     color: white;
-    font-size: 20px;
+    font-size: 40px;
     text-align: center;
     padding: 1rem 0;
 }
 .food-main-content p{
     color: white;
-    font-size: 0.8rem;
+    font-size: 1.0rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+
    /* text-align: center;*/
     padding: 1rem 0;
     line-height: 30px;
@@ -356,6 +351,18 @@ nav .sub-menu li a:hover {
 .description {
   color: white;
 }
+.ecologia-text {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Allinea al centro orizzontalmente */
+  justify-content: center; /* Allinea al centro verticalmente */
+  gap: 10px; /* Aggiunge spazio tra le frasi */
+  text-align: center; /* Allinea il testo al centro all'interno del paragrafo */
+  line-height: 1.5; 
+}
+
+
 
 .our-menu-food {
   background-color: var(--about-sec);
@@ -570,46 +577,58 @@ div#carouselExampleIndicators ol.carousel-indicators {
 
 /*------------------------------    NOVITA  ----------------------------- */
 /* Stile per la sezione "NOVITA" */
+/* Stile per la sezione "NOVITA" */
 .about2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   background-color: black;
   color: white;
-  padding: 50px;
-  height: 400px;
+  height: 300px;
 }
-
 
 .about-content2 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 50%;
 }
 
 .myimageabout {
- padding-right: 100px;
+  padding-right: 100px;
   height: auto;
-  max-width: 400px;
+  max-width: 300px;
 }
 
+/* Stile per il titolo "Novità" */
+.about-text-content h2 {
+  color: #fff;
+  text-align: center;
+  margin-top: 0; /* Rimuove il margine superiore predefinito */
+}
+.about-text-content{
+  margin: 10px;
+}
 
 @media screen and (max-width: 768px) {
   .about2 {
-      flex-direction: column;
-      height: 500px;
+    flex-direction: column;
+    height: auto;
   }
   .about-content2 {
-      width: 100%;
-      text-align: center;
+    width: 100%;
+    text-align: center;
   }
   .myimageabout {
- 
     height: auto;
     max-width: 400px;
   }
+  .about-text-content{
+    margin: 10px;
+  }
 }
+
 
 
 /*------------------------  footer      ------------------------- */
