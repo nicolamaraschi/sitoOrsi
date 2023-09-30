@@ -10,8 +10,13 @@
 
 /* Imposta la dimensione del font per tutti gli elementi nella navbar */
 .navbar-nav * {
-  font-size: 12px; /* Modifica il valore secondo le tue preferenze */
+  font-size: 12px; 
 }
+
+.dropdown-item {
+  font-size: 15px; 
+}
+
 
 /* Stili per il menu a discesa */
 .dropdown-menu.show {
