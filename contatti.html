@@ -6,104 +6,100 @@
   
 
     <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/logo orsi.ico">
+  
     <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" integrity="sha512-usVBAd66/NpVNfBge19gws2j6JZinnca12rAe2l+d+QkLU9fiG02O1X8Q6hepIpr/EYKZvKx/I9WsnujJuOmBA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-       
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+   
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
 
-  <!-- Importa jQuery -->
+    <!-- Importa jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   
+    <!-- Importa Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js" integrity="sha512-6zG8i4fMeeQDf9K1KULR9f2K0mN6ZnY7oU8RiW0Ks5v6GwZQJDP2nK9c4xN/x3qJYjKkM6J6vDqyW5Gz5z6pWQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  
+    <!-- Importa Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-  <!-- Importa Popper.js -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js" integrity="sha512-6zG8i4fMeeQDf9K1KULR9f2K0mN6ZnY7oU8RiW0Ks5v6GwZQJDP2nK9c4xN/x3qJYjKkM6J6vDqyW5Gz5z6pWQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <!-- Importa Bootstrap JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   <style>
-    /* Resto del tuo stile CSS rimane invariato */
   
-    .contact-form {
-      text-align: left; /* Allinea il testo a sinistra */
-    }
-  
-    .contact-form label {
-      display: block; /* Mostra le etichette come blocchi */
-      margin-bottom: 10px; /* Aggiunge spazio tra le etichette e le caselle di testo */
-    }
-  
-    .contact-form input[type="text"],
-    .contact-form input[type="email"],
-    .contact-form input[type="tel"],
-    .contact-form textarea {
-      width: 50%; /* Rendi le caselle di testo larghe al 100% del loro contenitore */
-      padding: 2px; /* Aggiunge spazio interno alle caselle di testo */
-      margin-bottom: 5px; /* Aggiunge spazio tra le caselle di testo */
-    }
-  
-    /* Resto del tuo stile CSS rimane invariato */
-  
-   
-    body {
-     
-    }
-  
-    .container {
-     
-     
-    }
-   
 
-    .map-container {
-      
-     padding: 10px;
-    
-    }
-  
-    .contact-details {
-      padding: 20px;
-      background-color: #f0f0f0;
-    }
-  
-    .contact-details h2 {
-      font-size: 24px;
-      margin-bottom: 10px;
-    }
-  
-    .contact-details p {
-      margin: 10px 0;
-    }
-  
-    .map {
-      height:600px; /* Altezza del 100% per la mappa su desktop */
-    }
-  
-    .content-container {
-    
-     
-      
-      
-    }
-    .map-container, .contact-details {
-        flex: 1;  /* Ogni figlio del container occupa metà dello spazio disponibile */
-        margin: 10px; /* Aggiungi un po' di margine tra i due */
-    }
-  
-    .map-container {
-      
-    }
-  
-    @media (max-width: 768px) {
+/* Allinea il testo a sinistra */
+.contact-form {
+  text-align: left;
+}
+
+/* Mostra le etichette come blocchi */
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Rendi le caselle di testo larghe al 100% del loro contenitore */
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+  width: 100%; /* Ora le caselle di testo sono larghe al 100% */
+  padding: 5px; /* Riduci lo spazio interno per un aspetto più pulito */
+  margin-bottom: 10px; /* Aumenta lo spazio tra le caselle di testo */
+}
+
+/* Il tuo stile CSS rimane invariato */
+
+body {
+  /* Resta invariato */
+}
+
+.container {
+  /* Resta invariato */
+}
+
+/* Aggiungi un po' di spazio interno e un colore di sfondo per la sezione di dettagli di contatto */
+.contact-details {
+  padding: 20px;
+  background-color: #f0f0f0;
+}
+
+.contact-details h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.contact-details p {
+  margin: 10px 0;
+}
+
+/* Altezza del 100% per la mappa su desktop */
+.map {
+  height: 700px;
+}
+
+/* Utilizza flexbox per la disposizione dei contenuti */
+.content-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Ogni figlio del container occupa metà dello spazio disponibile */
+.map-container,
+.contact-details {
+  flex: 1;
+  margin: 10px;
+}
+
+/* Ordine inverso dei figli in modalità telefono */
+@media (max-width: 768px) {
   .content-container {
-    flex-direction: column-reverse; /* Inverti l'ordine dei figli in modalità telefono */
+    flex-direction:column;
   }
 
-  .map-container {
-    order: 1; /* Sposta la mappa sopra */
-  }
-
-  .contact-details {
-    order: 2; /* Mantieni la parte di inserimento della main sotto */
+  /* Larghezza del 100% per la mappa in modalità telefono */
+  .map {
+    height: 500px;
   }
 }
 
