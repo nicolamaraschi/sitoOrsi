@@ -66,11 +66,19 @@
       margin-bottom: 10px;
     }
 
-    .product-links {
-      display: flex;
-      justify-content: space-between;
-      font-size: 12px;
-    }
+
+.product-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Allinea al centro orizzontalmente */
+  font-size: 15px;
+}
+/* Aggiungi stili per il selettore */
+#product-images {
+  margin-top: 10px;
+  width: 80%; /* Imposta la larghezza del selettore come desiderato */
+  width: 100%;
+}
 
     .product-links a {
       margin-right: 10px;
@@ -211,17 +219,47 @@ if (savedLanguage) {
 
 
 <!-- Aggiungi il titolo della categoria dei prodotti -->
+
+
+
+
 <h1 class="category-title">Prodotti Orsetto per Bucato Domestico</h1>
 
   <div class="product-row">
     <div class="product">
       <div class="product-title">SMACCHIATORE Gr 700</div>
-      <img src="images/orsetto1.png" alt="Prodotto 1" class="product-image">
-      <div class="product-description">Sbiancante all'ossigeno attivo, ha una nuova formula ancora più efficace perchè è già attivo a 40°C ed agisce rapidamente sui tessuti. ORSETTO SMACCHIATUTTO è consigliato su tessuti bianche e colorati in cotone lino, misti e sintetici, ed è specifico per il bucato più difficile (tovaglie, asciugamani, lenzuola ecc.). L'ossigeno attivo che sviluppa a contatto con l'acqua, toglie agevolmente molti tipi di macchie, sbianca e rigenera tessuti ingialliti. ORSETTO SMACCHIATUTTO è consigliato per un'energica azione igienizzante sul bucato e aumenta la sensazione di pulito.</div>
       <div class="product-links">
-        
+        <select id="product-images">
+          <option value="images/orsetto1.png">Immagine Fronte</option>
+          <option value="images/orsetto2.png">Immagine Retro</option>
+          <option value="images/orsetto3.png">Immagine Lato</option>
+        </select>
       </div>
+      <img src="images/orsetto1.png" alt="Prodotto 1" class="product-image">
+      <div class="product-description">Sbiancante all'ossigeno attivo, ha una nuova formula ancora più efficace perché è già attivo a 40°C ed agisce rapidamente sui tessuti. ORSETTO SMACCHIATUTTO è consigliato su tessuti bianchi e colorati in cotone lino, misti e sintetici, ed è specifico per il bucato più difficile (tovaglie, asciugamani, lenzuola ecc.). L'ossigeno attivo che sviluppa a contatto con l'acqua, toglie agevolmente molti tipi di macchie, sbianca e rigenera tessuti ingialliti. ORSETTO SMACCHIATUTTO è consigliato per un'energica azione igienizzante sul bucato e aumenta la sensazione di pulito.</div>
     </div>
+    
+    
+    <script>
+      // Funzione per gestire il cambio di immagine in base alla selezione
+      function updateProductImage() {
+        const selectElement = document.getElementById('product-images');
+        const selectedValue = selectElement.value;
+        const productImage = document.querySelector('.product-image');
+    
+        // Aggiorna l'attributo "src" dell'immagine del prodotto
+        productImage.src = selectedValue;
+      }
+    
+      // Aggiungi un gestore di eventi "change" al selettore
+      const productImagesSelect = document.getElementById('product-images');
+      productImagesSelect.addEventListener('change', updateProductImage);
+    
+      // Chiama la funzione iniziale per impostare l'immagine in base alla selezione predefinita
+      updateProductImage();
+    </script>
+
+
     <div class="product">
       <div class="product-title">SACCO 18 Misurini</div>
       <img src="images/orsetto2.png" alt="Prodotto 2" class="product-image">
