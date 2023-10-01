@@ -200,6 +200,25 @@ nav .sub-menu li a:hover {
 
 
 /*------------------------ PARALAX  ------------------------- */
+
+
+/*  l'animazione ORSI S.L.R. Industria Chimica Orsi*/
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Applica l'animazione alle scritte <h1> e <p> */
+.parallax-text h1, .parallax-text p {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
 .parallax-section {
   background-image: url('images/b4mobile.png'); /* Specifica il percorso dell'immagine di sfondo */
   background-size: 60%; /* Imposta l'immagine di sfondo per mantenere le dimensioni originali */
@@ -256,8 +275,22 @@ nav .sub-menu li a:hover {
 
 
 
+/*------------------------ CARDS  ------------------------- */
 
-/* Stile per la sezione delle cards */
+ /* Stile iniziale per le cards */
+ .card {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 5s ease, transform 5s ease;
+}
+
+/* Quando il contenitore .card-list viene selezionato (ad esempio, al passaggio del mouse) */
+.card-list:hover .card {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 
 .innovation-section {
   padding: 20px;
@@ -331,9 +364,8 @@ nav .sub-menu li a:hover {
 
 
 
+/*------------------------ PRODUZIONE  ------------------------- */
 
-
-/*PRODUZIONE*/
 
 .enjoy-our-food{
     padding: 2rem 7%;
@@ -374,6 +406,20 @@ nav .sub-menu li a:hover {
 
 
 /*chi siamo*/
+
+
+/*  un'animazione di dissolvenza */
+ /* Definisci un'animazione di dissolvenza su hover */
+ .menu-food-content img {
+  opacity: 0.5; /* Opacità iniziale */
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Applica l'animazione al passaggio del mouse sopra l'immagine */
+.menu-food-content:hover img {
+  opacity: 1; /* Opacità al passaggio del mouse */
+}
+
 
 /* Stili per la sezione "Chi Siamo" */
 .description {

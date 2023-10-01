@@ -303,7 +303,39 @@ window.addEventListener('load', function() {
             </div>
         </div>
     </div>
+
     
+    <script>
+        // Rileva lo scorrimento della pagina
+        window.addEventListener("scroll", function() {
+            const innovationSection = document.querySelector(".innovation-section");
+            const cardList = document.querySelector(".card-list");
+    
+            // Verifica se la sezione è visibile nell'area visibile del viewport
+            const isSectionVisible = innovationSection.getBoundingClientRect().top < window.innerHeight;
+    
+            if (isSectionVisible) {
+                // Rimuovi la classe "hidden" per mostrare le card gradualmente
+                const cards = cardList.querySelectorAll(".card");
+                cards.forEach(function(card) {
+                    card.style.opacity = 1;
+                    card.style.transform = "translateY(0)";
+                });
+    
+                // Applica la transizione alle immagini
+                const images = cardList.querySelectorAll(".card img");
+                images.forEach(function(img) {
+                    img.style.transition = "opacity 0.5s ease";
+                    img.style.opacity = 1;
+                });
+    
+                // Rimuovi l'ascoltatore di eventi per evitare che l'animazione si ripeta
+                window.removeEventListener("scroll", arguments.callee);
+            }
+        });
+    
+    
+    </script>
 
 <p id="section2" style="position: relative; top: -100px;"></p>   
 <div  class="innovation-section">
@@ -311,7 +343,7 @@ window.addEventListener('load', function() {
     <p data-translation="ricerca3" style="text-align: center;">Il Nostro Team dedicato di Esperti in Ricerca e Sviluppo sono quotidianamente impegnati nella progettazione e industrializzazione di prodotti innovativi ad elevato contenuto tecnologico e di processi produttivi sempre più sostenibili per l’ambiente e le persone. Mettiamo l’accento sull’interdisciplinarietà, collaborando con Partner esterni e Università per garantire che le nostre soluzioni siano allineate alle più recenti scoperte scientifiche e tecnologiche.</p>
     
     <h3 data-translation="ricerca4"> LE NOSTRI TECNOLOGIE</h3>
-    <ul class="card-list"  class="container">
+    <ul class="card-list container">
         <li class="card">
             <div class="card-content">
                 <h4 data-translation="ricerca5">Polveri e Granuli Difficili</h4>
@@ -366,6 +398,15 @@ window.addEventListener('load', function() {
     </ul>
     
 </div >
+
+
+
+
+
+
+
+
+
    
 
 <p id="section3" style="position: relative; top: -100px;"></p>   
