@@ -162,6 +162,31 @@ window.addEventListener('load', function() {
     
 <!-- FINE NAVBAR -->
 
+<!-- FRECCINA ANCORA CHE PORTA SU -->
+<a href="#section0" id="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+<!-- SCRIPT PER FRECCINA -->
+  <script>
+    const scrollToTopButton = document.getElementById('scroll-to-top');
+  
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= 200) {
+        scrollToTopButton.style.display = 'block';
+      } else {
+        scrollToTopButton.style.display = 'none';
+      }
+    });
+  
+    scrollToTopButton.addEventListener('click', () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+    
+
 
 <p id="section0" style="position: relative; top: -100px;"></p>
   <a  name="section0"></a> <!-- Questa riga è importante -->
@@ -283,7 +308,7 @@ window.addEventListener('load', function() {
 <p id="section2" style="position: relative; top: -100px;"></p>   
 <div  class="innovation-section">
     <h2 data-translation="ricerca2">RICERCA & INNOVAZIONE TECNOLOGIA</h2>
-    <p data-translation="ricerca3">Il Nostro Team dedicato di Esperti in Ricerca e Sviluppo sono quotidianamente impegnati nella progettazione e industrializzazione di prodotti innovativi ad elevato contenuto tecnologico e di processi produttivi sempre più sostenibili per l’ambiente e le persone. Mettiamo l’accento sull’interdisciplinarietà, collaborando con Partner esterni e Università per garantire che le nostre soluzioni siano allineate alle più recenti scoperte scientifiche e tecnologiche.</p>
+    <p data-translation="ricerca3" style="text-align: center;">Il Nostro Team dedicato di Esperti in Ricerca e Sviluppo sono quotidianamente impegnati nella progettazione e industrializzazione di prodotti innovativi ad elevato contenuto tecnologico e di processi produttivi sempre più sostenibili per l’ambiente e le persone. Mettiamo l’accento sull’interdisciplinarietà, collaborando con Partner esterni e Università per garantire che le nostre soluzioni siano allineate alle più recenti scoperte scientifiche e tecnologiche.</p>
     
     <h3 data-translation="ricerca4"> LE NOSTRI TECNOLOGIE</h3>
     <ul class="card-list"  class="container">
