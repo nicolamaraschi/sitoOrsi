@@ -54,6 +54,8 @@
 
 </style>
 
+
+
 <div id="container-stats" class="container-stats">
     <div class="stat">
         <h2>Personale</h2>
@@ -94,3 +96,81 @@
         animateValue(stat, startValue, endValue, duration);
     });
 </script>
+
+
+
+<style>
+    /* Stili CSS per le immagini */
+    .client-logos {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0;
+    }
+
+    .client-logos li {
+        width: 180px;
+        height: 100px;
+        margin: 10px;
+        overflow: hidden;
+        box-shadow: 0px 0px 10px -7px #555;
+        transition: transform 0.5s, opacity 0.5s;
+        opacity: 0;
+    }
+
+    .client-logos img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+
+<div class="our-clients our-menu-food">
+    <h1 data-translation="partner" style="font-size: 2em;">I NOSTRI PARTNERSHIP</h1>
+    <ul class="client-logos">
+        <li><img src="loghi/logo1.jpeg" alt="" loading="lazy"></li>
+        <li><img src="loghi/logo2.jpg" alt="" loading="lazy"></li>
+        <li><img src="loghi/logo3.jpg" alt="" loading="lazy"></li>
+        <li><img src="loghi/logo4.png" alt="" loading="lazy"></li>
+        <li> <img src="loghi/logo5.png" alt=""> <img src="loghi/logo5.png" alt=""> </li>
+        <li> <img src="loghi/logo6.jpeg" alt=""> <img src="loghi/logo6.jpeg" alt=""> </li>
+       <!-- <li> <img src="loghi/logo7.jpeg" alt=""> <img src="loghi/logo7.jpeg" alt=""> </li> -->
+        <li> <img src="loghi/logo8.png" alt=""> <img src="loghi/logo8.png" alt=""> </li>
+        <li> <img src="loghi/logo9.jpeg" alt=""> <img src="loghi/logo9.jpeg" alt=""> </li>
+        <li> <img src="loghi/logo10.png" alt=""> <img src="loghi/logo10.png" alt=""> </li>
+        <li> <img src="loghi/logo11.jpeg" alt=""> <img src="loghi/logo11.jpeg" alt=""> </li>
+        <li> <img src="loghi/logo12.jpeg" alt=""> <img src="loghi/logo12.jpeg" alt=""> </li>
+        <li> <img src="loghi/logo13.jpg" alt=""> <img src="loghi/logo13.jpg" alt=""> </li>
+        <li> <img src="loghi/logo14.jpg" alt=""> <img src="loghi/logo14.jpg" alt=""> </li>
+        <li> <img src="loghi/logo15.png" alt=""> <img src="loghi/logo15.png" alt=""> </li>
+        <li> <img src="loghi/logo16.png" alt=""> <img src="loghi/logo16.png" alt=""> </li>
+        <li> <img src="loghi/logo17.jpg" alt=""> <img src="loghi/logo17.jpg" alt=""> </li>
+        <li> <img src="loghi/logo18.jpeg" alt=""> <img src="loghi/logo18.jpeg" alt=""> </li>
+</div>
+
+<script>
+    // Funzione per animare l'apparizione delle immagini
+    function animateImages() {
+        const logoItems = document.querySelectorAll(".client-logos li");
+        let delay = 0;
+
+        logoItems.forEach((item, index) => {
+            setTimeout(() => {
+                item.style.opacity = 1;
+                item.style.transform = "translateY(0)";
+            }, delay);
+            delay += 200; // Ritardo di 200ms tra le immagini (puoi personalizzare questo valore)
+        });
+    }
+
+    // Carica tutte le immagini
+    const logoItems = document.querySelectorAll(".client-logos li img");
+    logoItems.forEach((item) => {
+        item.addEventListener("load", () => {
+            // Chiama la funzione per animare quando le immagini sono caricate
+            animateImages();
+        });
+    });
+</script>
+
+

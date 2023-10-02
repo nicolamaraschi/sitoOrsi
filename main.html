@@ -34,7 +34,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand ml-0 custom-navbar-brand" href="#">
-                <img src="images/LOGO ORSI.png" alt="logo orsi" class="logo-img">
+                <img src="images/logov2.png" alt="logo orsi" class="logo-img">
                 <img src="images/nome orsi.png" alt="logo orsi" class="logo-img">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -525,8 +525,8 @@ window.addEventListener('load', function() {
 </div>
 
 <div class="our-clients", class="our-menu-food">
-    <h1 style="font-size:2em;">I NOSTRI PARTNERSHIP</h1>
-    <ul>
+    <h1 data-translation="partner" style="font-size:2em;">I NOSTRI PARTNERSHIP</h1>
+    <ul class="client-logos">
         <li> <img src="loghi/logo1.jpeg" alt=""> <img src="loghi/logo1.jpeg" alt=""> </li>
         <li> <img src="loghi/logo2.jpg" alt=""> <img src="loghi/logo2.jpg" alt=""> </li>
         <li> <img src="loghi/logo3.jpg" alt=""> <img src="loghi/logo3.jpg" alt=""> </li>
@@ -547,6 +547,45 @@ window.addEventListener('load', function() {
         <li> <img src="loghi/logo18.jpeg" alt=""> <img src="loghi/logo18.jpeg" alt=""> </li>
     </ul>
 </div>
+<script>
+    // Funzione per animare l'apparizione delle immagini
+    function animateImages() {
+        const logoItems = document.querySelectorAll(".client-logos li");
+        let delay = 0;
+
+        logoItems.forEach((item, index) => {
+            setTimeout(() => {
+                item.style.opacity = 1;
+                item.style.transform = "translateY(0)";
+            }, delay);
+            delay += 200; // Ritardo di 200ms tra le immagini (puoi personalizzare questo valore)
+        });
+    }
+
+    // Funzione per controllare quando l'utente scorre verso la sezione delle immagini
+    function checkScroll() {
+        const section = document.querySelector(".our-clients");
+        const windowHeight = window.innerHeight;
+        const sectionTop = section.getBoundingClientRect().top;
+
+        if (sectionTop < windowHeight) {
+            // L'utente è nella sezione delle immagini, quindi avvia l'animazione
+            animateImages();
+            // Rimuovi l'evento scroll per evitare di riattivare l'animazione
+            window.removeEventListener("scroll", checkScroll);
+        }
+    }
+
+    // Aggiungi un gestore di eventi per l'evento di scroll
+    window.addEventListener("scroll", checkScroll);
+</script>
+
+
+
+
+
+
+
 
 
 <footer class="footer">

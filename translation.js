@@ -48,6 +48,7 @@ function setLanguage(lang) {
       "titoloNovita": "Novità",
       "descrizioneNovita1": "ORSI group e il suo Team È lieto di comunicare l’inizio dell’operatività della divisione Cosmetica Orsi. Locata nei pressi della nostra attuale sede comprende: Un’area dedicata di 6.000 M2 di cui 1.500 M2 coperti La creazione di un sito produttivo per la cosmesi e un laboratorio di analisi e ricerca e sviluppo dedicato. La gestione è affidata ad uno staff di tecnici e ricercatori, cosmetologi oggi pronti al debutto",
       "certificazioni2": "CERTIFICAZIONI",
+      "partner":"I NOSTRI PARTNERSHIP",
     },
     'en': {
       "home": "HOME",
@@ -92,6 +93,7 @@ function setLanguage(lang) {
       "titoloNovita": "News",
       "descrizioneNovita1": "ORSI Group and its team are excited to announce the start of operations of the Orsi Cosmetics division. Located near our current headquarters, it includes: a dedicated area of 6,000 square meters, of which 1,500 square meters are covered. This includes the creation of a production site for cosmetics and a laboratory for analysis and research and development dedicated. Management is entrusted to a team of technicians and researchers, cosmetologists ready for their debut today.",
       "certificazioni2": "CERTIFICATIONS",
+      "partner": "OUR PARTNERSHIP"
     },
       'fr': {
         "home": "ACCUEIL",
@@ -136,6 +138,7 @@ function setLanguage(lang) {
         "titoloNovita": "Nouveautés",
         "descrizioneNovita1": "ORSI Group et son équipe sont heureux d'annoncer le début des opérations de la division Orsi Cosmetics. Située près de notre siège actuel, elle comprend : une zone dédiée de 6 000 mètres carrés, dont 1 500 mètres carrés sont couverts. Cela comprend la création d'un site de production pour les cosmétiques et un laboratoire pour analysis et recherche et développement dédié. La gestion est confiée à une équipe de techniciens et de chercheurs, cosmetologues prêts pour leurs débuts aujourd'hui.",
         "certificazioni2": "CERTIFICATIONS",
+        "partner": "NOS PARTENARIATS",
       },
       'de': {
         "home": "STARTSEITE",
@@ -180,6 +183,7 @@ function setLanguage(lang) {
         "titoloNovita": "Neuheiten",
         "descrizioneNovita1": "ORSI Group und sein Team freuen sich, den Beginn des Betriebs der Abteilung Orsi Cosmetics bekannt zu geben. Diese befindet sich in der Nähe unseres aktuellen Hauptsitzes und umfasst: Einen dedizierten Bereich von 6.000 Quadratmetern, wovon 1.500 Quadratmeter überdacht sind. Dies beinhaltet die Schaffung eines Produktionsstandorts für Kosmetika sowie ein Labor für Analyse und Forschung und Entwicklung. Die Leitung obliegt einem Team von Technikern und Forschern, Kosmetologen, die heute bereit für ihren Start sind.",
         "certificazioni2": "ZERTIFIZIERUNGEN",
+        "partner": "UNSERE PARTNERSCHAFT",
       }
     };
   

@@ -708,7 +708,7 @@ div#carouselExampleIndicators ol.carousel-indicators {
 	width: 100%;
 	height: auto;
 	text-align: center;
-  background-color: #302f2c;
+  background-color: #000000;
 }
 
 .our-clients ul {
@@ -753,6 +753,43 @@ div#carouselExampleIndicators ol.carousel-indicators {
 	transform: translateY(-100%);
 	transition: .5s;
 }                         
+
+
+.logo-item {
+  margin: 10px;
+  opacity: 0; /* Inizialmente rendi le immagini trasparenti */
+  transform: translateY(20px); /* Inizialmente sposta le immagini verso il basso */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.logo-item img {
+  max-width: 100px; /* Regola la larghezza massima delle immagini */
+  height: auto;
+}
+
+ /* Stili CSS per le immagini */
+ .client-logos {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+.client-logos li {
+  width: 180px;
+  height: 100px;
+  margin: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px -7px #555;
+  transition: transform 0.5s, opacity 0.5s;
+  opacity: 0;
+}
+
+.client-logos img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 /*------------------------  footer      ------------------------- */
