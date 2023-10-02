@@ -1,61 +1,96 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navbar Multilevel Dropdown</title>
-    <!-- Include Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- Include jQuery and Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li class="dropdown-submenu">
-                            <a class="dropdown-item dropdown-toggle" href="#">Submenu</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">pesciolone</a></li>
-                                <li><a class="dropdown-item" href="#">gattone</a></li>
-                            </ul>
-                            
-                        </li>
-                        <li class="dropdown-submenu">
-                            <a class="dropdown-item dropdown-toggle" href="#">Submenu</a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Submenu action</a></li>
-                                <li><a class="dropdown-item" href="#">Another submenu action</a></li>
-                            </ul>
-                            
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <script>
-        // Bootstrap doesn't support submenu out of the box. So we need to make it work using this JS
-        $('.dropdown-menu a.dropdown-toggle').on('click', function(e) {
-            if (!$(this).next().hasClass('show')) {
-                $(this).parents('.dropdown-menu').first().find('.show').removeClass('show');
+<style>
+    /* Rimuovi il background-color dal container-stats e imposta un padding generale */
+.container-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+/* Stile per le statistiche */
+.stat {
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff; /* Sfondo bianco */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+  border-radius: 10px; /* Aggiunto bordo arrotondato */
+  transition: transform 0.3s ease; /* Aggiunto effetto di trasformazione */
+  cursor: pointer; /* Cambia il cursore quando ci passi sopra */
+}
+
+/* Stile per il titolo delle statistiche */
+.stat h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Stile per il valore delle statistiche */
+.stat p {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Aggiunto stile per la transizione al passaggio del mouse */
+.stat:hover {
+  transform: scale(1.05); /* Effetto di ingrandimento al passaggio del mouse */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Effetto di ombreggiatura più evidente */
+}
+
+/* Aggiunto stile per rendere responsive le statistiche su schermi più piccoli */
+@media (max-width: 768px) {
+  .container-stats {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stat {
+    margin-bottom: 20px;
+    max-width: none;
+    width: 80%;
+  }
+}
+
+</style>
+
+<div id="container-stats" class="container-stats">
+    <div class="stat">
+        <h2>Personale</h2>
+        <p data-count="15">0</p>
+    </div>
+    <div class="stat">
+        <h2>Dimensione Azienda m2</h2>
+        <p data-count="12000">0</p>
+    </div>
+    <div class="stat">
+        <h2>Clienti</h2>
+        <p data-count="50">0</p>
+    </div>
+    <div class="stat">
+        <h2>Tecnologie</h2>
+        <p data-count="10">0</p>
+    </div>
+</div>
+<script>
+    function animateValue(element, start, end, duration) {
+        let startTimestamp = null;
+        const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+            element.innerHTML = Math.floor(progress * (end - start) + start);
+            if (progress < 1) {
+                requestAnimationFrame(step);
             }
-            var $subMenu = $(this).next('.dropdown-menu');
-            $subMenu.toggleClass('show');
-            $(this).parents('li.nav-item.dropdown.show').on('hidden.bs.dropdown', function(e) {
-                $('.dropdown-submenu .show').removeClass('show');
-            });
-            return false;
-        });
-    </script>
-</body>
-</html>
+        };
+        requestAnimationFrame(step);
+    }
+
+    const stats = document.querySelectorAll("#container-stats .stat p");
+    stats.forEach((stat) => {
+        const startValue = parseInt(stat.textContent, 10);
+        const endValue = parseInt(stat.getAttribute("data-count"), 10);
+        const duration = 5000; // 5000 millisecondi (5 secondi) di durata dell'animazione
+        animateValue(stat, startValue, endValue, duration);
+    });
+</script>

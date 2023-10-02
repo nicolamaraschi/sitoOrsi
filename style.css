@@ -1,3 +1,5 @@
+
+
 /*------------------------ PER ANCORA FRECCINA  ------------------------- */
 
 
@@ -17,6 +19,10 @@
 #scroll-to-top i {
   font-size: 20px;
 }
+
+
+
+
 
 
 
@@ -401,12 +407,7 @@ nav .sub-menu li a:hover {
 }
 
 
-
-
-
-
-/*chi siamo*/
-
+/*------------------------  CHI SIAMO  ------------------------- */
 
 /*  un'animazione di dissolvenza */
  /* Definisci un'animazione di dissolvenza su hover */
@@ -443,7 +444,7 @@ nav .sub-menu li a:hover {
 }
 
 .our-menu-food h1 {
-  color: var(--btn-color);
+  color: white;
   font-size: 10px;
   text-align: center;
   padding: 0.5rem 0;
@@ -645,10 +646,6 @@ div#carouselExampleIndicators ol.carousel-indicators {
 
 
 
-
-
-
-
 /*------------------------------    NOVITA  ----------------------------- */
 /* Stile per la sezione "NOVITA" */
 /* Stile per la sezione "NOVITA" */
@@ -703,6 +700,59 @@ div#carouselExampleIndicators ol.carousel-indicators {
   }
 }
 
+
+
+ /*------------------------ NOMI AZIENDE   ------------------------- */
+
+ .our-clients {
+	width: 100%;
+	height: auto;
+	text-align: center;
+  background-color: #302f2c;
+}
+
+.our-clients ul {
+	padding: 0;
+	margin: 0;
+}
+
+.our-clients ul li {
+	list-style: none;
+	display: inline-block;
+	width:180px;
+	height:100px;
+	position: relative;
+	overflow: hidden;
+	cursor:pointer;
+	margin: 10px;
+	box-shadow: 0px 0px 10px -7px #555;
+	transition: .5s;
+}
+
+.our-clients ul li img {
+	width: 100%;
+	height: 100%;
+}
+.our-clients ul li img:nth-child(1) {
+	transform: translateY(0);
+	transition: .5s;
+}
+.our-clients ul li img:nth-child(2) {
+	transform: translateY(0);
+	transition: .5s;
+}
+
+/*Hover-Section*/
+
+
+.our-clients ul li:hover img:nth-child(1) {
+	transform: translateY(-100%);
+	transition: .5s;
+}
+.our-clients ul li:hover img:nth-child(2) {
+	transform: translateY(-100%);
+	transition: .5s;
+}                         
 
 
 /*------------------------  footer      ------------------------- */
