@@ -48,6 +48,7 @@ function setLanguage(lang) {
       "titoloNovita": "Novità",
       "descrizioneNovita1": "ORSI group e il suo Team È lieto di comunicare l’inizio dell’operatività della divisione Cosmetica Orsi. Locata nei pressi della nostra attuale sede comprende: Un’area dedicata di 6.000 M2 di cui 1.500 M2 coperti La creazione di un sito produttivo per la cosmesi e un laboratorio di analisi e ricerca e sviluppo dedicato. La gestione è affidata ad uno staff di tecnici e ricercatori, cosmetologi oggi pronti al debutto",
       "certificazioni2": "CERTIFICAZIONI",
+      "partner": "I NOSTRI PARTNERSHIP",
       "ricercaProdotti":"Ricerca Schede Prodotti",
       "inserisciProdotto":"Inserisci il codice prodotto",
       "cerca":"Cerca",
@@ -241,6 +242,7 @@ function setLanguage(lang) {
         "mail2": "E-Mail-Adresse:",
         "messaggio2": "Nachricht:",
         "invia": "Senden"
+
       }
     };
   
