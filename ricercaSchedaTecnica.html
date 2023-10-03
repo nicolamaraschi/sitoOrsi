@@ -6,12 +6,11 @@
 
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
   <link rel="icon" type="image/x-icon" href="images/logo orsi.ico">
 
   <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css" integrity="sha512-usVBAd66/NpVNfBge19gws2j6JZinnca12rAe2l+d+QkLU9fiG02O1X8Q6hepIpr/EYKZvKx/I9WsnujJuOmBA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
-       
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
+ 
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"> 
 
   <!-- Importa jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -24,7 +23,9 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <script src="regulatory.js"></script>
+
+  
+    <script src="regulatory.js"></script>
 
 </head>
 <body>
@@ -34,7 +35,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
         <div class="container">
             <a class="navbar-brand ml-0 custom-navbar-brand" href="#">
-                <img src="images/LOGO ORSI.png" alt="logo orsi" class="logo-img">
+                <img src="images/logov2.png" alt="logo orsi" class="logo-img">
                 <img src="images/nome orsi.png" alt="logo orsi" class="logo-img">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -135,28 +136,42 @@
         });
       </script>
 
-<script src="translation.js"></script>
-
+    
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
+<script src="translation.js"></script>
+<script>
+    const savedLanguage = localStorage.getItem('language'); 
+    
+    if (savedLanguage) {
+      setLanguage(savedLanguage);
+    }
+
+    window.addEventListener('load', function() {
+  setLanguage(localStorage.getItem('language')); 
+});
+
+</script>
+
+
 
 <div id="searchContainer">
-    <h1 class="title">Ricerca Prodotti</h1>
+    <h1 data-translation="ricercaProdotti" class="title">Ricerca Schede Prodotti</h1>
     <div class="search-input">
-      <input type="text" id="searchInput" placeholder="Inserisci il codice prodotto">
-      <button onclick="searchProduct()">Cerca</button>
+      <input data-translation="inserisciProdotto" type="text" id="searchInput" placeholder="Inserisci il codice prodotto">
+      <button data-translation="cerca" onclick="searchProduct()">Cerca</button>
     </div>
   </div>
   
   <div id="resultContainer" style="display: none;">
     <h3 id="productCode" style="text-align: center;"></h3>
     <div style="display: flex; justify-content: center;">
-      <a id="pdf1Link" href="#" target="_blank" style="margin: 10px;">Visualizza scheda Tecnica</a>
-      <a id="pdf2Link" href="#" target="_blank" style="margin: 10px;">Visualizza scheda Sicurezza</a>
+      <a data-translation="schedaTecnica" id="pdf1Link" href="#" target="_blank" style="margin: 10px;">Visualizza scheda Tecnica</a>
+      <a data-translation="schedaSicurezza" id="pdf2Link" href="#" target="_blank" style="margin: 10px;">Visualizza scheda Sicurezza</a>
     </div>
   </div>
   

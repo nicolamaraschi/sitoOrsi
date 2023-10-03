@@ -112,7 +112,7 @@ body {
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <div class="container">
         <a class="navbar-brand ml-0 custom-navbar-brand" href="#">
-            <img src="images/LOGO ORSI.png" alt="logo orsi" class="logo-img">
+            <img src="images/logov2.png" alt="logo orsi" class="logo-img">
             <img src="images/nome orsi.png" alt="logo orsi" class="logo-img">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -220,11 +220,16 @@ body {
 <script src="invia_email.js"></script>
 
 <script>
-const savedLanguage = localStorage.getItem('language'); 
+  const savedLanguage = localStorage.getItem('language'); 
+  
+  if (savedLanguage) {
+    setLanguage(savedLanguage);
+  }
 
-if (savedLanguage) {
-  setLanguage(savedLanguage);
-}
+  window.addEventListener('load', function() {
+setLanguage(localStorage.getItem('language')); 
+});
+
 </script>
 
 
@@ -235,28 +240,28 @@ if (savedLanguage) {
           <div id="map" class="map"></div>
         </div>
         <div class="contact-details">
-          <h2><i class="fas fa-address-card"></i> Contatti</h2>
+          <h2 data-translation="Contatti" ><i class="fas fa-address-card"></i> Contatti</h2>
           <p><i class="fas fa-building"></i> Orsi S.R.L.</p>
-          <p><i class="fas fa-map-marker-alt"></i> Indirizzo: via C. Bassi 22 - 40015 Galliera (BO)</p>
-          <p><i class="fas fa-phone"></i> Telefono: +39 051 6671000</p>
+          <p data-translation="indirizzo"><i class="fas fa-map-marker-alt"></i> Indirizzo: via C. Bassi 22 - 40015 Galliera (BO)</p>
+          <p data-translation="telefono"><i class="fas fa-phone"></i> Telefono: +39 051 6671000</p>
           <p><i class="fas fa-envelope"></i> Email: info@orsidetersivi.com</p>
           <p><i class="fas fa-envelope"></i> PEC: orsidetersivi@pec.it</p>
           <div class="contact-form">
-            <h2><i class="fas fa-envelope"></i> Inviaci un'E-mail</h2>
+            <h2 data-translation="mail"><i class="fas fa-envelope"></i> Inviaci un'E-mail</h2>
             <form action="invia_email.php" method="post">
-              <label for="nome">Nome:</label>
+              <label data-translation="nome" for="nome">Nome:</label>
               <input type="text" id="nome" name="nome" required><br>
 
-              <label for="telefono">Telefono:</label>
+              <label data-translation="telefono2"for="telefono">Telefono:</label>
               <input type="tel" id="telefono" name="telefono" required><br>
 
-              <label for="email">Indirizzo e-mail:</label>
+              <label data-translation="mail2"for="email">Indirizzo e-mail:</label>
               <input type="email" id="email" name="email" required><br>
 
-              <label for="messaggio">Messaggio:</label>
+              <label data-translation="messaggio2" for="messaggio">Messaggio:</label>
               <textarea id="messaggio" name="messaggio" required></textarea><br>
 
-              <input type="submit" value="Invia">
+              <input data-translation="invia" type="submit" value="Invia">
             </form>
           </div>
         </div>

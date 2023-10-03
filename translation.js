@@ -48,7 +48,22 @@ function setLanguage(lang) {
       "titoloNovita": "Novità",
       "descrizioneNovita1": "ORSI group e il suo Team È lieto di comunicare l’inizio dell’operatività della divisione Cosmetica Orsi. Locata nei pressi della nostra attuale sede comprende: Un’area dedicata di 6.000 M2 di cui 1.500 M2 coperti La creazione di un sito produttivo per la cosmesi e un laboratorio di analisi e ricerca e sviluppo dedicato. La gestione è affidata ad uno staff di tecnici e ricercatori, cosmetologi oggi pronti al debutto",
       "certificazioni2": "CERTIFICAZIONI",
-      "partner":"I NOSTRI PARTNERSHIP",
+      "ricercaProdotti":"Ricerca Schede Prodotti",
+      "inserisciProdotto":"Inserisci il codice prodotto",
+      "cerca":"Cerca",
+      "schedaTecnica":"Visualizza scheda Tecnica",
+      "schedaSicurezza":"Visualizza scheda Sicurezza",
+      "Contatti":"Contatti",
+      "indirizzo":"Indirizzo: via C. Bassi 22 - 40015 Galliera (BO)",
+      "telefono":"Telefono: +39 051 6671000",
+      "mail":"Inviaci un'E-mail",
+      "nome":"Nome:",
+      "telefono2":"Telefono:",
+      "mail2":"Indirizzo e-mail:",
+      "messaggio2":"Messaggio:",
+      "invia":"invia",
+     
+      
     },
     'en': {
       "home": "HOME",
@@ -93,7 +108,21 @@ function setLanguage(lang) {
       "titoloNovita": "News",
       "descrizioneNovita1": "ORSI Group and its team are excited to announce the start of operations of the Orsi Cosmetics division. Located near our current headquarters, it includes: a dedicated area of 6,000 square meters, of which 1,500 square meters are covered. This includes the creation of a production site for cosmetics and a laboratory for analysis and research and development dedicated. Management is entrusted to a team of technicians and researchers, cosmetologists ready for their debut today.",
       "certificazioni2": "CERTIFICATIONS",
-      "partner": "OUR PARTNERSHIP"
+      "partner": "OUR PARTNERSHIP",
+      "ricercaProdotti": "Product Search",
+      "inserisciProdotto": "Enter Product Code",
+      "cerca": "Search",
+      "schedaTecnica": "View Technical Data Sheet",
+      "schedaSicurezza": "View Safety Data Sheet",
+      "Contatti": "Contact",
+      "indirizzo": "Address: via C. Bassi 22 - 40015 Galliera (BO)",
+      "telefono": "Phone: +39 051 6671000",
+      "mail": "Send us an Email",
+      "nome": "Name:",
+      "telefono2": "Phone:",
+      "mail2": "Email Address:",
+      "messaggio2": "Message:",
+      "invia": "Send"
     },
       'fr': {
         "home": "ACCUEIL",
@@ -139,6 +168,20 @@ function setLanguage(lang) {
         "descrizioneNovita1": "ORSI Group et son équipe sont heureux d'annoncer le début des opérations de la division Orsi Cosmetics. Située près de notre siège actuel, elle comprend : une zone dédiée de 6 000 mètres carrés, dont 1 500 mètres carrés sont couverts. Cela comprend la création d'un site de production pour les cosmétiques et un laboratoire pour analysis et recherche et développement dédié. La gestion est confiée à une équipe de techniciens et de chercheurs, cosmetologues prêts pour leurs débuts aujourd'hui.",
         "certificazioni2": "CERTIFICATIONS",
         "partner": "NOS PARTENARIATS",
+        "ricercaProdotti": "Recherche de Produits",
+        "inserisciProdotto": "Saisir le Code Produit",
+        "cerca": "Rechercher",
+        "schedaTecnica": "Voir la Fiche Technique",
+        "schedaSicurezza": "Voir la Fiche de Sécurité",
+        "Contatti": "Contacts",
+        "indirizzo": "Adresse : via C. Bassi 22 - 40015 Galliera (BO)",
+        "telefono": "Téléphone : +39 051 6671000",
+        "mail": "Envoyez-nous un e-mail",
+        "nome": "Nom :",
+        "telefono2": "Téléphone :",
+        "mail2": "Adresse e-mail :",
+        "messaggio2": "Message :",
+        "invia": "Envoyer"
       },
       'de': {
         "home": "STARTSEITE",
@@ -184,15 +227,56 @@ function setLanguage(lang) {
         "descrizioneNovita1": "ORSI Group und sein Team freuen sich, den Beginn des Betriebs der Abteilung Orsi Cosmetics bekannt zu geben. Diese befindet sich in der Nähe unseres aktuellen Hauptsitzes und umfasst: Einen dedizierten Bereich von 6.000 Quadratmetern, wovon 1.500 Quadratmeter überdacht sind. Dies beinhaltet die Schaffung eines Produktionsstandorts für Kosmetika sowie ein Labor für Analyse und Forschung und Entwicklung. Die Leitung obliegt einem Team von Technikern und Forschern, Kosmetologen, die heute bereit für ihren Start sind.",
         "certificazioni2": "ZERTIFIZIERUNGEN",
         "partner": "UNSERE PARTNERSCHAFT",
+        "ricercaProdotti": "Produktsuche",
+        "inserisciProdotto": "Geben Sie den Produktcode ein",
+        "cerca": "Suchen",
+        "schedaTecnica": "Technisches Datenblatt anzeigen",
+        "schedaSicurezza": "Sicherheitsdatenblatt anzeigen",
+        "Contatti": "Kontakte",
+        "indirizzo": "Adresse: via C. Bassi 22 - 40015 Galliera (BO)",
+        "telefono": "Telefon: +39 051 6671000",
+        "mail": "Schicken Sie uns eine E-Mail",
+        "nome": "Name:",
+        "telefono2": "Telefon:",
+        "mail2": "E-Mail-Adresse:",
+        "messaggio2": "Nachricht:",
+        "invia": "Senden"
       }
     };
   
 
   const elements = document.querySelectorAll('[data-translation]');
       
-elements.forEach(element => {
+  elements.forEach(element => {
     const translationKey = element.getAttribute('data-translation');
-    // Utilizza innerHTML per mantenere il formato delle nuove righe
-    element.innerHTML = translations[lang][translationKey];
-});
+    if (element.tagName === 'INPUT' && element.hasAttribute('placeholder')) {
+      // Se l'elemento è un input con un attributo placeholder,
+      // traduci e imposta il valore del placeholder
+      element.placeholder = translations[lang][translationKey];
+    } else {
+      // Altrimenti, imposta il testo all'interno dell'elemento
+      // utilizzando innerHTML per mantenere il formato delle nuove righe
+      element.innerHTML = translations[lang][translationKey];
+    }
+
+    // Traduci gli attributi degli anchor
+    if (element.tagName === 'A' && element.hasAttribute('data-translation')) {
+      const attributeTranslationKey = element.getAttribute('data-translation');
+      const translatedAttributeValue = translations[lang][attributeTranslationKey];
+
+      // Verifica se il testo del link deve essere tradotto
+      if (element.textContent.trim() === attributeTranslationKey) {
+        element.textContent = translatedAttributeValue;
+      }
+
+      // Traduci l'attributo "title" (o altri attributi personalizzati se presenti)
+      element.setAttribute('title', translatedAttributeValue);
+    }
+  });
+
+
+
+
 }
+
+
